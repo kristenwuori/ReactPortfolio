@@ -1,0 +1,887 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <title>NATPA</title>
+</head>
+
+<body>
+
+    <!-- Homepage image with logo and company name -->
+    <div class="homepage">
+        <div id="navBar" class="navBar">
+
+            <!-- <a href="#donate">DONATE</a> -->
+            <a id="myBtn">DONATE</a>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content" id="donateModal">
+
+
+                    <img id="logo2" src="Images/mountainUp.png">
+                    <h2 id="napa">Donate to NatPa</h2>
+                    <form class="modal-content2" action="#" onsubmit="switchModals()">
+                        <div class="firstModal">
+                            <span class="close1" onclick="closeModal()">&times;</span>
+                            <p id="napa2">Please fill in this form to donate to your favorite park.</p>
+
+                            <label id="info" for="name"><b>Full Name</b></label>
+                            <input id="enterFullName" type="text" placeholder="Enter Full Name" name="name" required>
+                            <label id="info" for="email"><b>Email</b></label>
+                            <br>
+                            <input id="enterEmail" type="email" placeholder="Enter Email" name="email" required>
+                            <div id="dropdowns">
+                                <div id="dropdown">
+                                    <h6 id="options"><b id="selectPark">Select A Park:</b></h6>
+                                    <select id="select">
+                                        <option>Yosemite National Park</option>
+                                        <option>Grand Canyon National Park</option>
+                                        <option>Yellowstone National Park</option>
+                                        <option>Glacier National Park</option>
+                                        <option>Great Smokey Mountains Nat. Park</option>
+                                    </select>
+                                </div>
+                                <div id="dropdown2">
+                                    <h6 id="amounts"><b>Select An Amount:</b></h6>
+                                    <select id="select2">
+                                        <option>$1</option>
+                                        <option>$5</option>
+                                        <option>$10</option>
+                                        <option>$25</option>
+                                        <option>$100</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <input type="submit" class="signupbtn" value="Submit">
+                                <!-- <button type="submit" class="signupbtn" onclick="switchModals()">Submit</button> -->
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="secondModal">
+                        <span class="close1" onclick="closeModal()">&times;</span>
+                        <div class="row">
+                            <div class="col-75">
+                                <div id="billingForm" class="container">
+                                    <form action="" onsubmit="closeModal()">
+
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <h3 id="billAdd">Billing Address</h3>
+                                                <label for="fname"> Full Name</label>
+                                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe"
+                                                    required>
+                                                <label for="email"> Email</label>
+                                                <input type="text" id="email" name="email"
+                                                    placeholder="john@example.com" required>
+                                                <label for="adr"> Address</label>
+                                                <input type="text" id="adr" name="address"
+                                                    placeholder="542 W. 15th Street" required>
+                                                <label for="city"> City</label>
+                                                <input type="text" id="city" name="city" placeholder="New York"
+                                                    required>
+
+                                                <div class="row">
+                                                    <div class="col-50">
+                                                        <label for="state">State</label>
+                                                        <input type="text" id="state" name="state" placeholder="NY"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <label for="zip">Zip</label>
+                                                        <input type="text" id="zip" name="zip" placeholder="10001"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-50">
+                                                <h3 id="payment">Payment</h3>
+
+                                                <label for="cname">Name on Card</label>
+                                                <input type="text" id="cname" name="cardname"
+                                                    placeholder="John More Doe" required>
+                                                <label for="ccnum">Credit card number</label>
+                                                <input type="text" id="ccnum" name="cardnumber"
+                                                    placeholder="1111-2222-3333-4444" required>
+                                                <label for="expmonth">Exp Month</label>
+                                                <input type="text" id="expmonth" name="expmonth" placeholder="September"
+                                                    required>
+                                                <div class="row">
+                                                    <div class="col-50">
+                                                        <label for="expyear">Exp Year</label>
+                                                        <input type="text" id="expyear" name="expyear"
+                                                            placeholder="2018" required>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <label for="cvv">CVV</label>
+                                                        <input type="text" id="cvv" name="cvv" placeholder="352"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="btn-block clearfix">
+                                            <input type="submit" class="signupbtn2" value="Submit">
+                                            <!-- <button type="submit" class="signupbtn2" onclick="closeModal()">Submit</button> -->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End of donation modal -->
+
+            <a id="myBtn3" href="#footer">CONTACT US</a>
+            <a id="myBtn2">COVID TIPS</a>
+
+            <!-- Start of covid modal -->
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content" id="covidModal">
+                    <div class="modal-header">
+                        <span class="close2">&times;</span>
+                        <h2 id="leaveNoTrace">THE LEAVE NO TRACE RECOMMENDATIONS FOR BEING OUTSIDE DURING COVID-19</h2>
+
+                    </div>
+                    <div class="modal-body">
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>YOU AND YOUR OUTDOOR
+                            WORLD</button>
+                        <div class="panel">
+                            <p>Where COVID-19 is spiking, it may not be possible to get out at all, so pay close
+                                attention
+                                to guidance in your
+                                community before heading outside. Then follow physical distancing guidelines, meaning
+                                staying at least 6 feet away
+                                from anyone not living with you.</p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>EXPECT CLOSURES</button>
+                        <div class="panel">
+                            <p>As businesses limit services or direct their staff to work remotely, closures should be
+                                expected. Many experts are
+                                recommending that you refrain from using public restrooms and other open facilities at
+                                all
+                                right now. Take necessary
+                                precautions such as taking extra food and water, learning how to use the bathroom
+                                outdoors,
+                                and being ready to pack
+                                all your trash out with you.</p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>PACK OUT YOUR
+                            TRASH</button>
+                        <div class="panel">
+                            <p>With limited staff and services likely in many parks and protected areas, trash and
+                                recycling
+                                receptacles may not
+                                be emptied as often as normal, or at all. Instead, pack your trashand recyclables out
+                                with
+                                you all the way home and
+                                use your own receptacles.</p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>AVOID TIMES AND PLACES OF
+                            HIGH USE</button>
+                        <div class="panel">
+                            <p>Absolutely avoid crowded parks, trails and beaches. To avoid being part of the creation
+                                of
+                                large groups at popular
+                                outdoor areas, spread out to less popular spots, and avoid times of highest use if
+                                possible.
+                            </p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>PROCEED WITH
+                            CAUTION</button>
+                        <div class="panel">
+                            <p>Keep in mind that as our health care system becomes more overwhelmed, it's important to
+                                reduce potential accidents
+                                that would add to the stress on the first responders and medical professionals. As much
+                                as
+                                possible, stick to activities
+                                and areas that are within your regular routine, and take it easy.</p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>DON'T FORGET THE LEAVE NO
+                            TRACE SEVEN PRINCIPLES</button>
+                        <div class="panel">
+                            <p>Just because times are tough doesn't mean the Leave No Trace Seven Principles fly out the
+                                window. Remember, it is still
+                                just as important to prepare for summer weather conditions, stick to trails, dispose of
+                                our
+                                waste properly, minimize
+                                fire impacts, leave what we find, keep a safe distance from wildlife and generally fo
+                                our
+                                best to eliminate impacts.</p>
+                        </div>
+                        <button id="covid-panel" class="accordion"><i class="arrow down"></i>BE CONSIDERATE AND KIND TO
+                            OTHERS</button>
+                        <div class="panel">
+                            <p>We all are in this together. Be considerate of others in the outdoors by ensuring that
+                                you
+                                practice physical distancing.
+                                Be particularly kind to park staff during these challenging times. Help them do their
+                                job by
+                                doing your part to take care
+                                of each other and our beloved outdoors.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h4>Source: Leave No Trace</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- End of covid modal -->
+
+        </div>
+        <!-- End of navigation links -->
+
+        <!-- Start of logo -->
+        <div class="homepage-logo">
+            <img id="logo" src="Images/mountainLogo.png">
+            <h1 id="projectTitle">NatPa</h1>
+        </div>
+        <!-- End of logo -->
+
+        <!--Start mission area-->
+        <div class="missionSpace">
+            <div class="mission" id="mission">
+                <br>
+                <br>
+                <h1 id="headingTextMission">Our Mission.</h1>
+                <p id="missionText">To guide those in search of natural beauty, fun and adventure. We focus on 5 of the
+                    many beautiful park’s the U.S.A. has to offer.</p><br>
+                <p id="homepageLink">Discover your next vacation.
+                </p><span id="arrow">&#8620;</span>
+            </div>
+        </div>
+        <!-- End of mission area -->
+
+    </div>
+    <!-- End of homepage -->
+
+    <!-- start of park links -->
+    <div id="myNavbar">
+        <button class="tablink" onclick="openPage('glacier', this, 'rgb(0,0,0,.534)')" id="defaultOpen">Glacier</button>
+        <button class="tablink" onclick="openPage('grandCanyon', this, 'rgb(0,0,0,.534)')">Grand Canyon</button>
+        <button class="tablink" onclick="openPage('greatSmokey', this, 'rgb(0,0,0,.534)')">Great Smokey
+            Mountains</button>
+        <button class="tablink" onclick="openPage('yellowstone', this, 'rgb(0,0,0,.534)')">Yellowstone</button>
+        <button class="tablink" onclick="openPage('yosemite', this, 'rgb(0,0,0,.534)')">Yosemite</button>
+    </div>
+    <!--End of parks links  -->
+
+    <!-- Start of tab content for park pages -->
+
+    <!-- Start for Yosemite tab -->
+    <div class="tabcontent" id="yosemite">
+
+        <!-- Start of national park page -->
+        <div class="nationalParkContent">
+            <h1 id="headingText1">Yosemite National Park </h1>
+
+            <!--Start INFO area-->
+            <div class="info">
+                <p>Yosemite might be our nation’s 3rd national park, but it sparked the idea of
+                    national parks across the United States. Yosemite National Park is best known for its waterfalls,
+                    towering granite monoliths,
+                    deep valleys and ancient giant sequoias. On October 1, 1890, Yosemite became a
+                    national park, and more than 125 years later, it’s still wowing visitors. Twenty-six years before it
+                    was
+                    a national park, President Lincoln
+                    signed the Yosemite Land Grant on June 30, 1864, protecting the Mariposa Grove
+                    and Yosemite Valley. It was the first time the government protected land because
+                    of its natural beauty so that people could enjoy it.</p>
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-sm-4 sideSection flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front-Yosemite">
+                                    <h2 id="flipImageArrow">&#8634;</h2>
+                                </div>
+                                <div class="flip-box-back-Yosemite">
+                                    <p class="flippedImageText">
+                                        Yosemite is world-famous for its waterfalls and the rainbows that can
+                                        appear in them. But very few people know about the park’s lunar rainbows or
+                                        moonbows. In the spring and early summer if the sky is clear and the moon is
+                                        full,
+                                        it can produce enough light to create a rainbow from a waterfall’s mist. It’s
+                                        pure
+                                        magic.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7 graphSection">Average visitors by month
+                            <div class="yosemiteGraph"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 nextSection"><strong>Fun Facts</strong>
+                            <ul>
+                                <li>Yosemite’s granite rock formations glow like fire at sunset.</li>
+                                <li>The park’s diverse landscape supports more than 400 species of animals.</li>
+                                <li>Yosemite is home to one of the tallest waterfalls in the world.</li>
+                                <li>Yosemite sees almost 3/4 of its visitors in six months.</li>
+                                <li>Yosemite is the only national park to bid to host the winter Olympics.</li>
+                                <li>Yosemite is a climber’s playground.</li>
+                                <li>Yosemite is one of the few places in the U.S. where you can see a rainbow at night.
+                                </li>
+                                <li>During certain times of year, some of Yosemite’s creeks are rushing slushies. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-7 imageSection2" id="imgSection2">
+                            <div class="graph"></div>
+                            The park’s diverse landscape supports more than 400 species. While at
+                            Yosemite, look all around and you might spy one of the park’s many amphibians,
+                            reptiles, birds and mammals looking back. One such animal is the rare Sierra
+                            Nevada red fox, which was spotted for the first time in nearly 100 years on a
+                            wildlife cam, roaming the high elevations of California’s Sierra Nevada.
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4 section"><img id="animal-image1" src="Images/yofox.png" alt="fox">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--Start Images On Side-->
+            <div id="yosemiteImage" class="yosemite yosemiteImage">
+
+                <!-- Image content -->
+                <div class="yosemite-content">
+                    <a href="javascript:void(0)" class="prevYosemite" onclick="openImgYosemite()">&#10094;</a>
+                    <a href="javascript:void(0)" class="nextYosemite" onclick="closeImgYosemite()">&#10095;</a>
+                </div>
+                <div class="image-content"></div>
+                <h1 class="imageTextYosemite">Half Dome</h1>
+                <div class="slideDots">
+                    <span class="dot" onclick="changeImgYosemite()"></span>
+                    <span class="dot" onclick="changeImgYosemite2()"></span>
+                    <span class="dot" onclick="changeImgYosemite3()"></span>
+                </div>
+            </div>
+            <!-- End of Images On Side-->
+            <!-- End of info area -->
+
+        </div>
+        <!-- End of national park page -->
+
+    </div>
+    <!-- End of Yosemite tab -->
+
+    <!-- Start of glacier tab -->
+    <div id="glacier" class="tabcontent">
+
+        <!-- Start of national park page -->
+        <div class="nationalParkContent">
+            <h1 id="headingText2">Glacier National Park </h1>
+
+            <!--Start INFO area-->
+            <div class="info">
+                <p>Established in 1910, Glacier National Park in Montana covers over one million acres, and is home to
+                    mountains, glaciers, waterfalls, lakes and a wonderful variety of thriving plant and animal life.
+                    Because of its vast
+                    diversity, the park is an explorer’s paradise and offers something for everyone, from those seeking
+                    to enjoy breath taking scenery from the seat of a car or boat to those wishing to get more up close
+                    and interactive with a hike, a climb, or even a glacier walk!</p>
+                <div class="container2">
+                    <div class="row">
+                        <div class="col-sm-4 sideSection flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front-Glacier">
+
+                                    <!-- Option for text over image -->
+                                    <h2 id="flipImageArrowGlacier">&#8634;</h2>
+                                </div>
+                                <div class="flip-box-back-Glacier">
+                                    <p class="flippedImageText">Glacier National Park is the world’s first international
+                                        peace park, celebrating peace and friendship
+                                        between the United States and Canada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7 graphSection">Average visitors by month
+                            <div class="glacierGraph"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 nextSection"><strong>Fun Facts</strong>
+                            <ul>
+                                <li>Lake McDonald is a favorite of visitors.</li>
+                                <li>Glacier National Park is a part of the world’s first international peace park.</li>
+                                <li>Glacier straddles the Continental Divide, allowing for extreme weather.</li>
+                                <li>Going-to-the-Sun Road is a spectacular marvel and a must see on your trip to
+                                    Glacier.
+                                </li>
+                                <li>Evidence of human use in the area dates back over 12,000 years.</li>
+                                <li>Glacier has welcomed over 100 million visitors to the park.</li>
+                                <li>The largest glacier in the park is 0.7 square miles.</li>
+                                <li>Glacier holds over 700 miles of hiking trails</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-7 imageSection1" id="imgSection3">
+                            <div class="graph "></div>
+                            If you’re visiting Glacier National Park, it won’t be long before you spot the
+                            agile mountain goat, perhaps hanging out on the edge of a
+                            steep mountain cliff. The official symbol of the park due to their prevalence
+                            and perseverance in the area, the hardy animal has made a name for itself,
+                            carefully watching visitors from a safe distance or foraging for food.
+                            Their special hooves allow them to easily climb a variety of terrain,
+                            from rock to ice, with ease.
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4 section"><img id="animal-image2" src="Images/g1.png" alt="goat">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+            <div id="glacierImage" class="glacier glacierImage">
+                <div class="glacier-content">
+                    <a href="javascript:void(0)" class="prevGlacier" onclick="openImgGlacier()">&#10094;</a>
+                    <a href="javascript:void(0)" class="nextGlacier" onclick="closeImgGlacier()">&#10095;</a>
+                </div>
+                <div class="image-content"></div>
+                <h1 class="imageTextGlacier">Harrison Glacier</h1>
+                <div class="slideDots">
+                    <span class="dot" onclick="changeImgGlacier()"></span>
+                    <span class="dot" onclick="changeImgGlacier2()"></span>
+                    <span class="dot" onclick="changeImgGlacier3()"></span>
+                </div>
+            </div>
+            <!-- End of info area -->
+        </div>
+        <!-- End of national park page -->
+
+    </div>
+    <!-- End of glacier tab -->
+
+    <!-- Start of GrandCanyon tab -->
+    <div id="grandCanyon" class="tabcontent">
+
+
+        <!-- Start of national park page -->
+        <div class="nationalParkContent">
+            <h1 id="headingText3">Grand Canyon National Park </h1>
+
+            <!--Start INFO area-->
+            <div class="info">
+                <p> Teddy Roosevelt was instrumental in protecting the Grand
+                    Canyon. President Theodore Roosevelt first visited the Grand Canyon in 1903 and
+                    was deeply moved by the unique landscape. In 1906, Roosevelt signed a bill that
+                    proclaimed the area the Grand Canyon Game Reserve, and two years later, he
+                    made it a national monument. Of the Grand Canyon, he said, “Leave it as it is. You
+                    cannot improve on it. The ages have been at work on it, and man can only mar it.”</p>
+                <div class="container3">
+                    <div class="row">
+                        <div class="col-sm-4 sideSection flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front-grandCanyon">
+
+                                    <!-- Option for text over image -->
+                                    <h2 id="flipImageArrowgrandCanyon">&#8634;</h2>
+                                </div>
+                                <div class="flip-box-back-grandCanyon">
+                                    <p class="flippedImageText">Sun rays shine through clouds to light up the North Rim.
+                                        If
+                                        you’re looking to explore Grand
+                                        Canyon National Park with less crowds, the North Rim provides serenity and
+                                        spectacular
+                                        views. The North Rim closes to vehicles during the winter and remains open to
+                                        hikers,
+                                        snowshoers and cross country skiers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7 graphSection">Average visitors by month
+                            <div class="grandCanyonGraph"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 nextSection"><strong>Fun Facts</strong>
+                            <ul>
+                                <li>The Grand Canyon is bigger than the state of Rhode Island.</li>
+                                <li>The Grand Canyon itself can influence the weather.</li>
+                                <li>Tucked within the Grand Canyon are an estimated 1,000 caves.</li>
+                                <li>The Grand Canyon is one of the most visited national parks in the United States.
+                                </li>
+                                <li>The Grand Canyon was carved some 6 million years ago.</li>
+                                <li>Grand Canyon Village on the South Rim and the lodge on the North Rim are only 10
+                                    miles apart.</li>
+                                <li>You can get an aerial view of the Grand Canyon without ever leaving the ground.</li>
+                                <li>A visit to Tuweep (also spelled Toroweap) Overlook offers a chance for an uncrowded,
+                                    rustic and dramatic experience at the Grand Canyon.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-7 imageSection2" id="imgSection4">
+                            <div class="graph"></div>
+                            The most dangerous animal in the park is the rock squirrel. From bighorn
+                            sheep and the California Condors to the Gila monster, the Grand Canyon is home
+                            to a large array of wildlife. But it’s the rock squirrel that causes the most trouble.
+                            Every year, dozens of visitors are bitten when they try to feed these animals. To
+                            stay safe, do not approach or feed any animals found at Grand Canyon (or any park).
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4 section"><img id="animal-image3" src="/Images/CrandcanyonSquirrl.png"
+                                alt="goat">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!--Start Images On Side-->
+            <div id="grandCanyonImage" class="grandCanyon grandCanyonImage">
+
+                <!-- Image content -->
+                <div class="grandCanyon-content">
+                    <a href="javascript:void(0)" class="prevgrandCanyon" onclick="openImggrandCanyon()">&#10094;</a>
+                    <a href="javascript:void(0)" class="nextgrandCanyon" onclick="closeImggrandCanyon()">&#10095;</a>
+                </div>
+                <div class="image-content"></div>
+                <h1 class="imageTextgrandCanyon">Red Rocks</h1>
+                <div class="slideDots" id="slideDots">
+                    <span class="dot" onclick="changeImggrandCanyon()"></span>
+                    <span class="dot" onclick="changeImggrandCanyon2()"></span>
+                    <span class="dot" onclick="changeImggrandCanyon3()"></span>
+                </div>
+            </div>
+            <!-- End of Images On Side-->
+            <!-- End of info area -->
+
+        </div>
+        <!-- End of national park page -->
+
+    </div>
+    <!-- End of GrandCanyon tab -->
+
+    <!-- Start of Great Smokey Mountains tab -->
+    <div id="greatSmokey" class="tabcontent">
+
+        <!-- Start of national park page -->
+        <div class="nationalParkContent">
+            <h1 id="headingText4">Great Smokey Mountains National Park </h1>
+
+            <!--Start INFO area-->
+            <div class="info">
+                <p>The Smoky Mountains are between 200 and 300 million years old, making them one of the oldest
+                    mountain
+                    ranges on earth!
+                    The Smoky Mountains is the
+                    most visited national park in the United States!
+                    There are so many things to do, from hiking, to
+                    fishing, to horseback riding, to exploring
+                    important parts of history.
+                </p>
+                <div class="container4">
+                    <div class="row">
+                        <div class="col-sm-4 sideSection flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front-greatSmokey">
+
+                                    <!-- Option for text over image -->
+                                    <h2 id="flipImageArrowgreatSmokey">&#8634;</h2>
+                                </div>
+                                <div class="flip-box-back-greatSmokey">
+                                    <p class="flippedImageText">The Cherokee Called the Area “Shaconage”
+                                        (Sha-Kon-O-Hey),
+                                        which means the “Land of Blue Smoke.”. The “smoke,” better described as a
+                                        mist. The mist is formed from the vapor given off by all the vegetation
+                                        in
+                                        the mountains.
+                                        The molecules that make up the gas scatter blue light from the sky, giving
+                                        the
+                                        fog
+                                        its blue color</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7 graphSection">Average visitors by month
+                            <div class="greatSmokeyGraph"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 nextSection"><strong>Fun Facts</strong>
+                            <ul>
+                                <li>Home to a Large Diversity of Plants and Animals</li>
+                                <li>No Entrance Fee to the National Park</li>
+                                <li>Most Visited National Park in the United States</li>
+                                <li> Salamander Capital of the World</li>
+                                <li>Some of the Oldest Mountains in the World</li>
+                                <li>More than 800 Miles of Hiking Trails</li>
+                                <li>About 2,900 Miles of Streams</li>
+                                <li>Mountaintop Temperatures Rarely Reach Above 80 Degrees</li>
+                                <li>More than 90 Historic Structures Preserved by the Park</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-7 imageSection3" id="imgSection5">
+                            <div class="graph"></div>
+                            The Great Smoky Mountains is home to a large diversity of plants and animals. There are
+                            more than 4,000 plants, 140 species of trees, about 65 species of mammals, 200
+                            varieties of birds, 67 native fish species, and more than 80 types of reptiles and
+                            amphibians. About 1,500 bears are said to call the Smokies home! When you’re on our
+                            zipline tour, keep your eye out for wildlife below you and admire the nature that
+                            surrounds you.
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4 section"> <img id="animal-image4" src="Images/glacierbear.png" alt="bear">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--Start Images On Side-->
+            <div id="greatSmokeyImage" class="greatSmokey greatSmokeyImage">
+                <!-- Image content -->
+                <div class="greatSmokey-content">
+                    <a href="javascript:void(0)" class="prevgreatSmokey" onclick="openImggreatSmokey()">&#10094;</a>
+                    <a href="javascript:void(0)" class="nextgreatSmokey" onclick="closeImggreatSmokey()">&#10095;</a>
+                </div>
+                <div class="image-content"></div>
+                <h1 class="imageTextgreatSmokey">Mount LeConte</h1>
+                <div class="slideDots">
+                    <span class="dot" onclick="changeImggreatSmokey()"></span>
+                    <span class="dot" onclick="changeImggreatSmokey2()"></span>
+                    <span class="dot" onclick="changeImggreatSmokey3()"></span>
+                </div>
+            </div>
+            <!-- End of Images On Side-->
+            <!-- End of info area -->
+
+        </div>
+        <!-- End of national park page -->
+
+    </div>
+    <!-- End of Great Smokey tab -->
+
+    <!-- Start of Yellowstone tab -->
+    <div id="yellowstone" class="tabcontent">
+
+        <!-- Start of national park page -->
+        <div class="nationalParkContent">
+            <h1 id="headingText5">Yellowstone National Park </h1>
+
+            <!--Start INFO area-->
+            <div class="info">
+                <p>Yellowstone was born on March 1, 1872 -- making it the world’s first national park.
+                    When President Ulysses S. Grant signed the Yellowstone National Park Protection
+                    Act into law, it protected more than 2 million acres of mountain wilderness,
+                    amazing geysers and vibrant landscapes for future generations to enjoy. As we
+                    celebrate Yellowstone’s birthday, check out these interesting facts about our iconic
+                    national park.</p>
+                <div class="container5">
+                    <div class="row">
+                        <div class="col-sm-4 sideSection flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front-yellowstone">
+
+                                    <!-- Option for text over image -->
+                                    <h2 id="flipImageArrowyellowstone">&#8634;</h2>
+                                </div>
+                                <div class="flip-box-back-yellowstone">
+                                    <p class="flippedImageText"> The most famous: Old Faithful, which got its name in
+                                        1870
+                                        for its
+                                        regularity. While this geyser has never erupted at exact hourly intervals, its
+                                        eruptions are somewhat predictable. Plus, Old
+                                        Faithful erupts more frequently than any of the other large geysers -- around 17
+                                        times a day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7 graphSection">Average visitors by month
+                            <div class="yellowstoneGraph"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 nextSection"><strong>Fun Facts</strong>
+                            <ul>
+                                <li>Half the world’s hydrothermal features are found at Yellowstone.</li>
+                                <li>Old Faithful isn’t as reliable as its name. </li>
+                                <li>“Share the road” takes on a whole new meaning at Yellowstone.</li>
+                                <li>Yellowstone’s history dates back 11,000 years.</li>
+                                <li>Yellowstone is a supervolcano.</li>
+                                <li>Yellowstone is home to the largest concentration of mammals in the lower 48.</li>
+                                <li>Yellowstone has its own Grand Canyon.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-7 imageSection1" id="imgSection1">
+                            <div class="graph"></div>
+                            Beyond its geysers, Yellowstone is world-renowned for its bison herds. It’s the only place
+                            in
+                            the
+                            U.S. where bison have lived continuously since prehistoric times. Rush hour here is a little
+                            dierent
+                            with bison often causing traffc jams -- nicknamed bison jams -- as cars wait for the animals
+                            to
+                            cross the road.
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4"><img id="animal-image5" src="/Images/buffalotrafficjam.png" alt="bison">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!--Start Images On Side-->
+            <div id="yellowstoneImage" class="yellowstone yellowstoneImage">
+
+                <!-- Image content -->
+                <div class="yellowstone-content">
+                    <a href="javascript:void(0)" class="prevyellowstone" onclick="openImgyellowstone()">&#10094;</a>
+                    <a href="javascript:void(0)" class="nextyellowstone" onclick="closeImgyellowstone()">&#10095;</a>
+                </div>
+                <div class="image-content"></div>
+                <h1 class="imageTextyellowstone">Hydrothermal Feature</h1>
+                <div class="slideDots" id="slideDots">
+                    <span class="dot" onclick="changeImgyellowstone()"></span>
+                    <span class="dot" onclick="changeImgyellowstone2()"></span>
+                    <span class="dot" onclick="changeImgyellowstone3()"></span>
+                </div>
+            </div>
+            <!-- End of Images On Side-->
+            <!-- End of info area -->
+
+        </div>
+        <!-- End of national park page -->
+
+    </div>
+    <!-- End of Yellowstone tab -->
+    <br>
+    <br>
+    <br>
+    <!-- Footer Information -->
+    <footer class="hu-padding-32 footer" id="footer">
+        <div class="hu-row-padding">
+            <div id="thankYou" class="hu-third">
+                <h3 id=tYou>THANK YOU</h3>
+                <br>
+                <p style="text-align:center" id="remember">Remember take out what you take in and only you can prevent
+                    forest fires!</p>
+
+                <hr class="footerLine">
+                <div class='contactUs'>
+                <h3 id="cUs">CONTACT US</h3>
+                <br>
+                <p style="text-align:center" id="contactUs">Email: Natpa@parks.com<br>Phone: 1-(123)456-7890</p>
+            </div>
+            </div>
+
+            <div id="followUs" class="hu-third">
+                <hr id="footerLine" class="footerLine">
+                <h3 id="folUs">FOLLOW US</h3>
+                <ul class="hu-ul hu-hoverable linksContainer">
+
+                    <li id="li1"><img id="youTube" src="/Images/youtubewords.png">
+                    </li>
+                    <!-- <hr class="footerLine1"> -->
+                    <li id="li2"><img id="instagram" src="/Images/instagramwords.png">
+                    </li>
+                    <!-- <hr class="footerLine2"> -->
+                    <li id="li3"><img id="linkedIn" src="/Images/linkedin.png">
+                    </li>
+                    <!-- <hr class="footerLine3"> -->
+                    <li id="li4"><img id="twitter" src="/Images/twitter.png">
+                    </li>
+                </ul>
+            </div>
+            <div id="popPosts" class="hu-twothird">
+                <h3 id=pPosts>POPULAR POSTS</h3>
+
+                <li class="hu-padding-16">
+                    <img id="goatPic" src="/Images/goatGlacier.PNG" class="hu-left hu-margin-right" >
+                    <br>
+                    <div class="postBox">
+                        <h4 id="myTrip">My Yosemite trip</h4>
+                        <p id="yosTrip">Our family had a blast at Yosemite National
+                            Park! There were so many fun trails to explore. We had
+                            an up-close encounter with the famed Sierra Nevada red
+                            fox!
+                        </p>
+                    </div>
+                </li>
+                <br>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="covid.js"></script>
+    <script type="text/javascript" src="donation.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="tabs.js"></script>
+    <script type="text/javascript" src="glacierPage.js"></script>
+    <script type="text/javascript" src="glacierChart.js"></script>
+    <script type="text/javascript" src="yosemitePage.js"></script>
+    <script type="text/javascript" src="yosemiteChart.js"></script>
+    <script type="text/javascript" src="grandCanyonPage.js"></script>
+    <script type="text/javascript" src="grandCanyonChart.js"></script>
+    <script type="text/javascript" src="greatSmokeyPage.js"></script>
+    <script type="text/javascript" src="greatSmokeyChart.js"></script>
+    <script type="text/javascript" src="yellowstonePage.js"></script>
+    <script type="text/javascript" src="yellowstoneChart.js"></script>
+    <script type="text/javascript" src="donation2.js"></script>
+    <!-- End of scripts -->
+
+</body>
+
+</html>

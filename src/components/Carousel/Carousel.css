@@ -1,0 +1,32 @@
+.carousel {
+    overflow: hidden;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: linear-gradient(90deg, rgb(110, 94, 254), rgba(73, 63, 252, 1) 100%);
+    color: #fff;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.indicators > button {
+    margin: 5px;
+}
+
+.indicators > button.active {
+    background-color: rgba(73, 63, 252, 1);
+    color: #fff;
+}

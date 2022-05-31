@@ -1,0 +1,2991 @@
+* {
+  font-family: dejaVu Sans;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(75, 94, 75)
+}
+body {
+  overflow-x: hidden;
+}
+
+/* Start styling for homepage */
+a {
+  cursor: pointer;
+}
+.homepage {
+  background-image: url("Images/pexels-mohamed-almari-1571108.jpg");
+  height: 101%; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage-logo {
+  position: absolute;
+  right: 0%;
+  top: 50px;
+  width: 40%;
+  height: 350px;
+  background-color: rgba(75, 94, 75, 0.623);
+}
+#projectTitle {
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-left: 10px;
+}
+#homepageLink{
+  font-size: 25px;
+  text-align: center;
+  color: #818181;
+  position: absolute;
+  right: 30%;
+  top: 80%;
+}
+#arrow{
+  position: absolute;
+  right: 25%;
+  top: 75%;
+  color: #818181;
+  font-size: 50px;
+  transform: rotate(90deg)
+}
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo2 {
+  margin-left: 40%;
+  margin-top: -20px;
+  width: 20%;
+}
+#headingText, #missionText, #headingTextMission {
+  margin: 15px;
+  color: white;
+}
+#missionText {
+  padding: 20px;
+  text-align: center;
+  margin-left: 40px;
+}
+#headingText {
+  padding-top: 60px;
+}
+/* End of styling for homepage */
+
+/* Start of mission space/area on homepage */
+.missionSpace {
+  position: absolute;
+  left: 0%;
+  bottom: 23%;
+  height: 300px;
+  width: 65%;
+  background-color: rgba(22, 22, 56, 0.685);
+}
+/* End of mission space/area */
+
+/* Start homepage navigation bar */
+#navBar {
+  background-color: rgba(75, 94, 75, 0.623);
+  width: 40%;
+  float: right;
+}
+
+#navBar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px;
+  font-family: "reem kufi", sans-serif;
+}
+
+#navBar a:hover {
+  color: rgba(255, 255, 255, 0.452);
+  text-decoration: none;
+  padding: 5px;
+  font-family: "reem kufi", sans-serif;
+}
+
+/* End of homepage navigation bar */
+
+/* Start of Yosemite images */
+.yosemiteImage {
+  background-image: url(Images/pexels-vladimir-kudinov-36363.jpg);    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+
+.yosemiteImage2 {
+  background-image: url(Images/pexels-adi-perets-4126897.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+
+.yosemiteImage3 {
+  background-image: url(Images/pexels-gali-640908EDIT.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+/* End of Yosemite Images */
+
+/* Links inside yosemite image */
+.yosemite a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Links yosemite image hover */
+.yosemite a:hover, .yosemite a:focus {
+  color: #cecece;
+  text-decoration: none;
+}
+
+/* Start of yosemite slide show */
+
+/* arrow to expand image */
+.prevYosemite {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+  
+/* arrow to close image */
+.nextYosemite {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} 
+.active, .dot:hover {
+  background-color: #ffffff;
+ 
+} 
+/* End of Slide Show */
+
+/* Title on yosemite image and yosemite image content */
+.imageTextYosemite {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 65%;
+  right: -30%;
+}
+.image-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 70%;
+  height: 20%;
+  position: relative;
+  top: 80%;
+  right: -25%;
+  border-radius: 10px;
+}
+
+.slideDots {
+  position: relative;
+  top: 65%;
+  right: -62%;
+}
+
+.slideDotsBig {
+  right: -30%;
+}
+/* End of yosemite Image Content */
+
+/* Sections */
+.graphSection {
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 10px;
+  border-style: none;
+  text-align: center;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+.nextSection {
+  padding: 15px;
+  background-color: #CACACA;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  color: rgb(71, 71, 71);
+}
+
+/* Start of section image flip box */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: none;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; 
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front-Yosemite, .flip-box-back-Yosemite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-front-Yosemite {
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px;
+  background-image: url(Images/yosemiteFalls.PNG);
+  background-position-x: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+.flip-box-back-Yosemite {
+  background-color: rgb(38, 49, 42);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+.flippedImageText {
+  /* transform: translateY(55%); */
+  font-size: 18px;
+}
+#flipImageArrow {
+  background-color: rgb(38, 49, 42);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 100px;
+  width: 20%;
+  height: 10%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: -8;
+  padding-top: 5;
+  padding-left: 5;
+}
+/* End of section image flip box */
+
+/* End of sections */
+
+/* d3 line graph */
+.line-path {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+/* End of d3 line graph */
+
+/* Start of park tab links */
+.tablink {
+  text-transform: uppercase;
+  font-family: reem kufi;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 5px;
+  font-size: 14px;
+  width: 20%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+#myNavbar {
+  width: 100%; 
+  transition: top 0.3s; 
+  font-family: "reem kufi", sans-serif;
+  z-index: 0;
+}
+/* End of park tab links */
+
+/* Start of tab content */
+.info {
+  overflow: auto;
+  height: 80%;
+  width: 71%;
+  padding: 3%;
+  margin-left: -10px;
+  overflow-x: hidden;
+  z-index: 100;
+  float: left;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 12px 10px;
+  height: 100%;
+  z-index: 2;
+  border-bottom: solid 1px rgb(136, 136, 136);
+}
+/* End of tab content */
+
+#headingText1, #headingText2, #headingText3, #headingText4, #headingText5 {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+/* Tab colors for park page */
+#yosemite {background-color: rgb(75, 94, 75);}
+#grandCanyon {background-color: rgb(75, 94, 75);}
+#glacier {background-color: rgb(41, 41, 66);}
+#yellowstone {background-color: rgb(41, 41, 66);}
+#greatSmokey {background-color: rgb(136, 136, 136);}
+/* End of park page tab colors */
+
+/* Start of glacier content (copied from yosemite specific styling and renamed with glacier) */
+
+/* The national park (background) */
+
+.glacierImage {
+  background-image: url(Images/2478407.jpg);    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+.glacierImage3 {
+  background-image: url(Images/GlacierOption1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+} 
+.glacierImage2 {
+  background-image: url(Images/lakeMcDonald.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+.prevGlacier {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+} 
+
+/* arrow to close image */
+.nextGlacier {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+.imageTextGlacier {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 65%;
+  right: -30%;
+}
+
+/* Links inside national park image */
+.glacier a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Links national park image hover */
+.glacier a:hover, .glacier a:focus {
+  color: #cecece;
+  text-decoration: none;
+}
+
+.flip-box-front-Glacier {
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px;
+  background-image: url(Images/glacierFlowers.PNG);
+  background-size: fill;
+  background-position-x: -270px;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+.flip-box-front-Glacier, .flip-box-back-Glacier {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-back-Glacier {
+  background-color: rgba(255, 255, 255, 0.103);
+  color: white;
+  font-weight: bolder;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+#flipImageArrowGlacier {
+  background-color:rgb(41, 41, 66);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 100px;
+  width: 20%;
+  height: 10%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: -8;
+  padding-top: 5;
+  padding-left: 5;
+}
+/* End of glacier content */
+
+/* Start of GrandCanyon content (copied from Glacier specific styling and renamed with GrandCanyon) */
+
+/* The national park (background) */
+.grandCanyonImage {
+  background-image: url(Images/Grand\ Canyon\ option\ 1.jpg);    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  }
+  
+.grandCanyonImage3 {
+  background-image: url(Images/Grand\ Canyon\ option\ 3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  }
+  
+  .grandCanyonImage2 {
+  background-image: url(Images/Grand\ Canyon\ option\ 2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+.prevgrandCanyon {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+
+/* arrow to close image */
+.nextgrandCanyon {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+.imageTextgrandCanyon {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 65%;
+  right: -30%;
+}
+
+/* Links inside national park image */
+.grandCanyon a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Links national park image hover */
+.grandCanyon a:hover, .grandCanyon a:focus {
+  color: #cecece;
+  text-decoration: none;
+}
+
+.flip-box-front-grandCanyon {
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px;
+  background-image: url(/Images/Sunrays.png);
+  background-size: fill;
+  background-position-x: -20px;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+
+.flip-box-front-grandCanyon, .flip-box-back-grandCanyon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back-grandCanyon {
+  background-color: rgb(38, 49, 42);
+  color: white;
+  font-weight: bolder;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+
+#flipImageArrowgrandCanyon {
+  background-color:rgb(38, 49, 42);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 100px;
+  width: 20%;
+  height: 10%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: -8;
+  padding-top: 5;
+  padding-left: 5;
+}
+/* End of GrandCanyon content */
+
+/* Start of Great Smokey Mountains content (copied from Glacier specific styling and renamed with Great Smokey Mountains) */
+
+/* The national park (background) */
+.greatSmokeyImage {
+  background-image: url(Images/Great\ Smokey\ Mountains\ option\ 1.jpg);    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  }
+
+.greatSmokeyImage3 {
+  background-image: url(Images/Great\ Smokey\ Mountains\ option\ 2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  } 
+.greatSmokeyImage2 {
+  background-image: url(Images/Great\ Smokey\ Mountains\ option\ 3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+.prevgreatSmokey {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+     
+/* arrow to close image */
+.nextgreatSmokey {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+.imageTextgreatSmokey {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 65%;
+  right: -30%;
+}
+
+/* Links inside national park image */
+.greatSmokey a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Links national park image hover */
+.greatSmokey a:hover, .greatSmokey a:focus {
+  color: #cecece;
+  text-decoration: none;
+}
+.flip-box-front-greatSmokey {
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px;
+  background-image: url(Images/Great\ Smokey\ Mountains\ option\ 4.jpg);
+  background-size: fill;
+  background-position-x: -270px;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+.flip-box-front-greatSmokey, .flip-box-back-greatSmokey {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-back-greatSmokey {
+  background-color:   rgb(48, 62, 82);
+  color: white;
+  font-weight: bolder;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+#flipImageArrowgreatSmokey {
+  background-color:  rgb(48, 62, 82);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 100px;
+  width: 20%;
+  height: 10%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: -8;
+  padding-top: 5;
+  padding-left: 5;
+}
+/* End of Great Smokey Mountains content */
+
+/* Start of Yellowstone content (copied from Glacier specific styling and renamed with Great Smokey Mountains) */
+
+/* The national park (background) */
+.yellowstoneImage {
+  background-image: url(Images/Yellowstone\ option\ 1.jpg);    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  }
+  .yellowstoneImage3 {
+  background-image: url(Images/ys5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+  }
+.yellowstoneImage2 {
+  background-image: url(Images/minigyser.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 2;
+  border-radius: 15px;
+  float: right;
+}
+.prevyellowstone {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+      
+/* arrow to close image */
+.nextyellowstone {
+  cursor: pointer;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(550%);
+  margin-top: -80px;
+}
+.imageTextyellowstone {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 65%;
+  right: -30%;
+}
+
+/* Links inside national park image */
+.yellowstone a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Links national park image hover */
+.yellowstone a:hover, .yellowstone a:focus {
+  color: #cecece;
+  text-decoration: none;
+}
+
+.flip-box-front-yellowstone {
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px;
+  background-image: url(Images/oldfaithful.png);
+  background-size: fill;
+  background-position-x: -350px;
+  background-position-y:-50px;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+
+.flip-box-front-yellowstone, .flip-box-back-yellowstone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back-yellowstone {
+  background-color: rgba(255, 255, 255, 0.103);
+  color: white;
+  font-weight: bolder;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+}
+
+#flipImageArrowyellowstone {
+  background-color: rgba(255, 255, 255, 0.103);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 100px;
+  width: 20%;
+  height: 10%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: -8;
+  padding-top: 5;
+  padding-left: 5;
+}
+
+/* End of Yellowstone content */
+
+/* Start of footer, will be modified, waiting for content */
+.footer {
+  width: 100%;
+  height: 35%;
+  background-color: rgb(75, 94, 75);
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+#myTrip {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#yosTrip {
+  text-align: center;
+  margin: -5px 5px 0px 5px;
+  background-color: #CACACA;
+}
+
+#youTube{
+  /* margin-left: 115px;
+  margin-top: 0px;
+  margin-bottom: 10px; */
+  height: 30px;
+  width: 80px;
+  margin-left: 115px;
+}
+
+#instagram {
+  /* margin-left: 115px; */
+  height: 30px;
+  width: 85px;
+  margin-left: 115px;
+  /* margin-bottom: 10px; */
+  /* margin-top: -10px; */
+}
+
+#twitter {
+  /* margin-left: 110px; */
+  height: 35px;
+  width: 90px;
+  margin-left: 110px;
+  /* margin-top: -px; */
+  /* margin-bottom: 10px; */
+}
+
+#linkedIn {
+  /* margin-left: 115px; */
+  height: 30px;
+  width: 85px;
+  margin-left: 115px;
+  /* margin-bottom: 10px; */
+  /* margin-top: -10px; */
+}
+
+
+#li1, #li2, #li3, #li4 {
+  border-bottom-color: white;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  margin-left: 15px;
+
+}
+
+/* End of footer */
+
+/* Start of modal content for both donation and covid*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+}
+#donateModal, #covidModal {
+  width: 50%;
+  height: 90%;
+  background-color: #CACACA;
+}
+
+.modal-header, .modal-footer {
+  background-color: rgb(41, 41, 66);
+  color: white;
+  opacity: 0.9;
+}
+
+#billingForm {
+  background-color: #CACACA;
+  border: none;
+}
+
+/* Modal Content */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+}
+#covid-panel {
+  text-align: left;
+  background-color: #CACACA;
+  color: black;
+}
+
+#leaveNoTrace {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: -700px;
+  padding-bottom: 20px;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  margin-top: -150px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  margin-left: 680px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.np-button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
+.np-block {
+  display:block;
+  width:100%
+}
+.np-left-align {
+  text-align:left!important
+}
+
+/* collapsible drop down */
+.dropbtn {
+  background-color: #333;
+  color: #eeeeee;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+#dropdowns {
+  padding-bottom: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #eee; 
+  color: black
+}
+
+/* The following is for the donation modal */
+/* Full-width input fields */
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(41, 41, 66);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.signupbtn {
+  width: 100%;
+  background-color: rgb(41, 41, 66);
+  color: white;
+  padding: 10px;
+}
+
+.signupbtn2 {
+  width: 100%;
+  background-color: rgb(41, 41, 66);
+  color: white;
+  padding: 10px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+#info {
+  font-size: 16px;
+  font-family: "reem kufi", sans-serif;
+  font-weight: normal;
+}
+#options, #amounts {
+  font-size: 16px;
+  padding-top: 20px; 
+  font-family: "reem kufi", sans-serif;
+  font-weight: normal;
+}
+#enterFullName {
+  padding: 10px;
+  background: #f1f1f1;
+  border: none;
+}
+
+#enterEmail {
+  padding: 10px;
+  background: #f1f1f1;
+  border: none;
+  width: 100%;
+}
+#amounts {
+  text-align: right;
+  margin-top: -85px;
+}
+#dropdown2 {
+  text-align: right;
+  margin-top: 20px;
+}
+#terms {
+  text-align: center;
+}
+#napa {
+  text-align: center;
+}
+
+#napa2 {
+  text-align: center;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-right: 20px;
+}
+
+/* Custom Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cacaca; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Start of billing form modal */
+
+/* body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* End of modal content for both donation and covid */
+
+/* Start of footer */
+.footer {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(75, 94, 75);
+  color: white;
+  position: relative;
+  z-index: 2;
+  margin-top: -70px;
+}
+.hu-hoverable tbody tr:hover,.hu-ul.hu-hoverable li:hover {
+  background-color:#ccc;
+}
+.hu-ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+.hu-posts{
+  list-style-type: none;
+}
+.postBox {
+  background-color: #CACACA;
+  color: black;
+  width: 50%;
+  height: 200px;
+  position: relative;
+  top: -23px;
+  float: left;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+h3 {
+  text-align: center;
+}
+.hu-ul li {
+  padding-top:8px;
+  padding-bottom: 8px;
+  border-bottom:1px solid rgb(41, 41, 66);
+}
+.hu-col,.hu-half,.hu-third,.hu-twothird,.hu-threequarter,.hu-quarter {
+  float:left;
+  width:100%;
+}
+#footerLine {
+  display: none;
+}
+
+@media (min-width:601px) {
+.hu-col.m4,.hu-third {
+  width:25%;
+}}
+.hu-twothird{
+  width:50%;
+}
+.hu-row-padding, .hu-row-padding>.hu-half, .hu-row-padding>.hu-third, .hu-row-padding>.hu-twothird, .hu-row-padding>.hu-threequarter, .hu-row-padding>.hu-quarter, .hu-row-padding>.hu-col {
+  padding:0 8px
+}
+.hu-large {
+  font-size:18px!important;
+}
+.hu-margin-right {
+  margin-right:16px!important;
+}
+.hu-padding-16 {
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+}
+.hu-padding-32 {
+  padding-top:32px!important;
+  padding-bottom:32px!important;
+}
+.hu-left {
+  float:left!important;
+}
+.hu-button:hover {
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+.footerLine {
+  border-color: white;
+  margin-top: 40px;
+}
+
+
+#goatPic {
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  height: 200px;
+}
+
+#followUs {
+  padding-left: 40px;
+}
+
+#popPosts {
+  padding-left: 40px;
+  padding-right: -40px;
+}
+
+#thankYou {
+  padding-left: 30px;
+}
+/* End of footer */
+
+/* Parks Content */
+#animal-image1 {
+ height: 240px;
+ width: 380px;
+ border-radius: 10px;
+ box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+ margin-left: -55px;
+} 
+
+#animal-image2 {
+  height: 265px;
+ width: 380px;
+  border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+    margin-left: -55px;
+  }
+
+#animal-image3 {
+  height: 240px;
+ width: 380px;
+  border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+    margin-left: -55px;
+  }
+
+#animal-image4 {
+  height: 265px;
+ width: 380px;
+  border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+    margin-left: -55px;
+  }
+
+#animal-image5 {
+  height: 240px;
+ width: 380px;
+  border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+    margin-left: -55px;
+  }
+
+
+.imageSection1{
+  padding : 25px;
+  background-color: rgba(255, 255, 255, 0.103);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  border-style: none;
+  
+}
+.imageSection2{
+  padding : 25px;
+  background-color: rgb(38, 49, 42);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  border-style: none;
+
+}
+.imageSection3{
+  padding : 25px;
+  background-color: rgb(48, 62, 82);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  border-style: none;
+
+}
+
+.footerLine1, .footerLine2, .footerLine3 {
+  border-color: white;
+}
+
+@media (max-width:1280px) {
+  .footer {
+    height: 40%;
+  }
+
+  #leaveNoTrace {
+    margin-left: -950px;
+    padding-bottom: 25px;
+  }
+
+  .close1 {
+    margin-top: -190px;
+  }
+
+  .close2 {
+    margin-left: 900px;
+  }
+
+  .postbox {
+    float: right;
+    margin-top: -177px;
+  }
+
+  #goatPic {
+    height: 200px;
+    width: 280px;
+  }
+
+  #youTube, #instagram, #twitter, #linkedIn {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width:1024px) {
+  .homepage{
+    height: 101%;
+    width: 100%;
+  }
+
+  .homepage-logo{
+    margin-top: 8.5px;
+  }
+
+  #donateModal {
+    margin-left: 50px;
+    width: 77%;
+    height: 45%;
+  }
+
+  #covidModal {
+    margin-left: 15px;
+    width: 83%;
+    height: 60%;
+  }
+
+  .close1 {
+    margin-top: -170px;
+  }
+
+  .close2 {
+    margin-left: 880px;
+  }
+
+  #leaveNoTrace {
+    margin-left: -900px;
+  }
+
+  #napa {
+    font-size: 28px;
+    margin-left: 5px;
+  }
+
+  #napa2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #info {
+    font-size: 22px;
+  }
+
+  #enterFullName, #enterEmail {
+    font-size: 22px;
+  }
+
+  #amounts {
+    font-size: 22px;
+    margin-top: -100px;
+  }
+
+  #selectPark {
+    font-size: 22px;
+  }
+
+  #select, #select2 {
+    font-size: 22px;
+  }
+
+  .modal-body {
+    height: 40%;
+    font-size: 28px;
+  }
+
+  #logo2{
+    margin-left: 350px;
+    margin-top: -20px;
+    width: 20%;
+  }
+  
+  #headingTextMission {
+    margin-top: -30px;
+  }
+
+  #missionText {
+    font-size: 24px;
+  }
+
+  #navBar {
+    font-size: 22px;
+  }
+
+  #arrow {
+    /* position: absolute; */
+    right: 25%;
+    top: 75%;
+    color: #818181;
+    font-size: 50px;
+    transform: rotate(90deg);
+    padding-bottom: 40px;
+    margin-right: -40px;
+    margin-top: -20px;
+  }
+  
+  #homepageLink{
+    font-size: 25px;
+    text-align: center;
+    color: #818181;
+    position: absolute;
+    right: 30%;
+    top: 80%;
+    margin-right: -45px;
+  }
+
+  .tabContent {
+    height: 828px;
+  }
+
+  #headingText1 {
+    margin-left: 110px;
+    margin-top: 70px;   
+  }
+
+  #headingText2 {
+    margin-left: 140px;
+    margin-top: 70px;
+  }
+
+  #headingText3 {
+    margin-left: 40px;
+    margin-top: 70px;
+  }
+
+  #headingText4 {
+    margin-left: 0px;
+    margin-top: 70px;    
+  }
+
+  #headingText5 {
+    margin-left: 80px;
+    margin-top: 70px;      
+  }
+
+  .info {
+    height: 687px;
+    padding: 1%;
+  }
+
+  #yosP, #glaP, #gcP, #smoP, #yelP {
+    text-align: center;
+  }
+
+  #glacierImage, #grandCanyonImage, #greatSmokeyImage, #yellowstoneImage, #yosemiteImage {
+    height: 80%;
+  }
+
+  .imageTextGlacier, .imageTextgreatSmokey, .imageTextgrandCanyon, .imageTextyellowstone, .imageTextYosemite {
+    margin-top: 10px;
+  }
+
+  .glacierImage, .glacierImage2, .glacierImage3 {
+    height: 680px;
+    top: 110.5%;
+  }
+
+  .grandCanyonImage, .grandCanyonImage2, .grandCanyonImage3 {
+    height: 680px;
+    top: 110.5%;
+  }
+ 
+  .greatSmokeyImage, .greatSmokeyImage2, .greatSmokeyImage3 {
+    height: 680px;
+    top: 110.5%;
+  }
+
+  .yellowstoneImage, .yellowstoneImage2, .yellowstoneImage3 {
+    height: 680px;
+    top: 110.5%;
+  }
+
+  .yosemiteImage, .yosemiteImage2, .yosemiteImage3 {
+    height: 680px;
+    top: 110.5%;
+  }
+
+  #imgSection1 {
+    height: 215px;
+  }
+
+  #imgSection2 {
+    height: 265px;
+  }
+
+  #imgSection3 {
+    height: 290px;
+  }
+
+  #imgSection4 {
+    height: 280px;
+  }
+
+  #imgSection5 {
+    height: 285px;
+  }
+
+  .image-content {
+    height: 14%;
+  }
+
+  .tablink {
+    height: 5%;
+  }
+
+  #animal-image1 {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  }
+
+  #animal-image2 {
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  }
+
+  #animal-image3 {
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  }
+
+  #animal-image4 {
+    height: 200px;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  }
+
+  #animal-image5 {
+    height: 200px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.59), 0 6px 6px rgba(0,0,0,0.59);
+  }
+
+  .col-sm-1 {
+    display: none;
+  }
+
+  .col-sm-4 {
+    width: 300px;
+  }
+
+  .col-sm-7 {
+    height: 300px;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+
+  .nextSection {
+    width: 500px;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+
+  .graphSection {
+    margin-left: -80px;
+    height: 450px;
+  }
+
+  svg {
+    width: 400px;
+    height: 450px;
+    margin-left: -15px;
+  }
+
+  .flip-box-front-Glacier {
+    display: none;
+  }
+
+  .flip-box-inner {
+    display: none;
+  }
+
+  .postBox {
+    display: none;
+  }
+
+  #goatPic {
+    width: 100%;
+    height: 80%;
+    margin-top: -30px;
+  }
+
+  .footer {
+    height: 27%;
+    top: -8%;
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  .footerLine {
+    border-color: white;
+    margin-top: 40px;
+  }
+
+  #youTube {
+    margin-left: 45px;
+  }
+
+  #instagram {
+    margin-left: 45px;
+  }
+
+  #linkedIn {
+    margin-left: 45px;
+  }
+
+  #twitter {
+    margin-left: 45px;
+  }
+}
+
+@media(max-width:800px) {
+  .homepage {
+    width: 100%;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  .homepage-logo {
+    margin-top: 100px;
+  }
+
+  #missionText {
+    margin-top: -30px;
+  }
+
+  #homepageLink {
+    margin-top: -20px;
+    margin-right: -90px;
+  }
+
+  #donateModal {
+    height: 50%;
+    width: 88%;
+    margin-left: 20px;
+  }
+
+  .close1 {
+    margin-top: -130px;
+    margin-left: 200px;
+  }
+
+  #logo2 {
+    margin-left: 270px;
+  }
+
+  #covidModal {
+    width: 88%;
+    margin-left: 20px;
+    height: 75%;
+  }
+
+  .close2 {
+    margin-left: 650px;
+    margin-top: -5px;
+  }
+
+  #leaveNoTrace {
+    margin-left: -650px;
+  }
+
+  .modal-body {
+    margin-top:-15px;
+  }
+
+  #arrow {
+    right: 60%;
+    bottom: -15%;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .graphSection {
+    display: none;
+  }
+
+  .nextSection {
+    margin-left: 13px;
+  }
+
+  #yosemiteImage, #glacierImage, #grandCanyonImage, #yellowstoneImage {
+    height: 81%;
+  }
+
+  #greatSmokeyImage {
+    height: 75%;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 550px;
+    height: 400px;
+    margin-top: -30px;
+    margin-left: -3px;
+  }
+
+  #animal-image4 {
+    margin-bottom: 50px;
+    width: 550px;
+    height: 400px;
+    margin-top: -30px;
+    margin-left: -3px;
+  }
+
+  #imgSection3, #imgSection5, #imgSection1, #imgSection2  {
+    display: none;
+  }
+
+  .postbox {
+    display: none;
+  }
+
+  #goatPic {
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  #animal-image3 {
+    width: 550px;
+    height: 500px;
+    margin-top: -30px;
+    margin-left: 0px;
+  }
+
+  #imgSection4 {
+    display: none;
+  }
+
+  #remember {
+    margin-top: -30px;
+  }
+
+  .footerLine {
+    margin-top: -10px;
+  }
+
+  .contactUs {
+    margin-top: -10px;
+  }
+
+  #cUs, #tYou, #pPosts {
+    font-size: 20px;
+  }
+
+  #folUs {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #contactUs {
+    margin-top: -30px;
+  }
+
+  #youTube, #instagram, #linkedIn, #twitter {
+    margin-left: 28px;
+  }
+}
+
+@media(max-width:768px) {
+  .homepage{
+    width: 100%;
+  }
+
+  .close1 {
+    float: right;
+    margin-left: -150px;
+    margin-top: -140px;
+  }
+
+  #logo2 {
+    margin-left: 255px;
+  }
+
+  #covidModal {
+    width: 80%;
+  }
+
+  #donateModal {
+    height: 57%;
+    margin-left: 40px;
+  }
+
+  .modal-footer {
+    margin-bottom: -300px;
+  }
+
+  .close2{
+    float: right;
+    margin-top: 0px;
+    margin-left: 600px;
+  }
+
+  #leaveNoTrace {
+    margin-left: -625px;
+  }
+
+  #headingTextMission {
+    text-align: center;
+  }
+
+  #missionText {
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+
+  #homepageLink {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  #arrow {
+    right: 15%;
+  }
+
+  #navbar {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .homepage-logo {
+    width: 50%;
+    margin-top: 2.5px;
+  }
+
+  .tablink {
+    height: 8%;
+  }
+
+  #headingText1, #headingText2, #headingText3, #headingText4, #headingText5 {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
+  .graphSection {
+    display: none;
+  }
+
+  .nextSection {
+    margin-left: 10px;
+    padding: 5px;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 515px;
+    height: 400px;
+    margin-left: -5px;
+    margin-top: -10px;
+  }
+
+  #animal-image4 {
+    width: 515px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left: -5px;
+    margin-top: -10px;
+  }
+
+  #glacierImage, #grandCanyonImage, #yellowstoneImage, #yosemiteImage {
+    height: 81%;
+  }
+
+  #greatSmokeyImage {
+    height: 75%;
+  }
+
+  .imageSection1, .imageSection2, .imageSection3, .imageSection4, .imageSection5 {
+    display: none;
+  }
+
+ #thankYou {
+   padding: 5px;
+ }
+
+ #remember {
+   margin-top: -20px;
+   margin-bottom: -20px;
+ }
+
+ #contactUs {
+   margin-top: -30px;
+ }
+
+ #cUs {
+   margin-top: 20px;
+ }
+
+ .footerLine {
+   margin-top: 40px;
+ }
+
+  #youTube, #instagram, #linkedIn, #twitter {
+    margin-left: 25px;
+  }
+
+  .postBox {
+    display: none;
+  }
+
+  .hu-padding-16::marker {
+    display: none;
+  }
+
+  #goatPic {
+    width: 100%;
+    margin-top: -30px;
+  }
+}
+
+@media(max-width:600px) {
+  .homepage {
+    width: 100%;
+  }
+
+  #navBar {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .homepage-logo {
+    margin-top: 30px;
+  }
+
+  .missionSpace {
+    height: 47%;
+    bottom: 4%;
+  }
+
+  #homepageLink {
+    margin-top: -80px;
+    margin-left: 60px;
+  }
+
+  #arrow {
+    position: absolute;
+    right: 60%;
+    top: 80%;
+  }
+
+  .tablink {
+    height: 8%;
+  }
+
+  #headingText1, #headingText2, #headingText3, #headingText4, #headingText5 {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
+}
+
+@media (max-width:414px) {
+  .homepage {
+    height: 101.5%;
+    width: 100%;
+  }
+
+  #donateModal {
+    width: 90%;
+    margin-left: 20px;
+    height: 100%;
+  }
+
+  #covidModal {
+    width: 90%;
+    height: 75%;
+    margin-left: 20px;
+  }
+
+  #leaveNoTrace {
+    font-size: 18px;
+    margin-left: -295px;
+  }
+
+  .close2 {
+    margin-left: 265px;
+  }
+
+  #covid-panel {
+    font-size: 14px;
+  }
+
+  #logo{
+    margin-left: -13px;
+    margin-top: -40px;
+  }
+
+  #logo2 {
+      height: 250px;
+      width: 170px;
+      margin-top: -20px;
+      margin-left: 80px;      
+  }
+
+  .close1 {
+    margin-top: -190px;
+  }
+
+  #napa {
+    margin-right: -5px;
+  }
+
+  .col-50 {
+    font-size: 14px;
+    
+  }
+
+  #billAdd, #payment {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  #napa2 {
+    font-size: 16px;
+  }
+
+  #info {
+    font-size: 14px;
+  }
+
+  #enterFullName {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #enterEmail {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #options {
+    float: left;
+    font-size: 8px;
+    font-size: 14px;
+  }
+
+  #select {
+    font-size: 14px;
+  }
+
+  #select2 {
+    font-size: 14px;
+    float: left;
+    margin-left: -145px;
+    margin-top: 25px;
+  }
+
+  #selectPark {
+    font-size: 14px;
+  }
+
+  #amounts {
+    float: left;
+    margin-top: -20px;
+    font-size: 14px;
+  }
+
+  .signupbtn {
+    margin-top: 40px;
+  }
+
+  .homepage {
+    width: 100%;
+  }
+
+  #navBar {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .homepage-logo {
+    height: 250px;
+    width: 170px;
+    top: 100px;
+    margin-right: 5px;
+  }
+
+  #projectTitle {
+    margin-left: 5px;
+  }
+
+  .missionSpace {
+    position: absolute;
+    left: 2%;
+    bottom: 8%;
+    height: 310px;
+    width: 65%;
+    background-color: rgba(22, 22, 56, 0.685);
+  }
+
+  #headingTextMission {
+    font-size: 26px;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  #myBtn, #myBtn2, #myBtn3 {
+    font-size: 16px;
+  }
+
+  #missionText {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  #homepageLink {
+    margin-top: -40px;
+    margin-left: -5px;
+    font-size: 20px;
+  }
+
+  #arrow{
+    position: absolute;
+    right: 70%;
+    top: 75%;
+    color: #818181;
+    font-size: 50px;
+    transform: rotate(90deg)
+  }
+
+  .tablink {
+    height: 11%;
+    font-size: 8px;
+  }
+
+  .nationalParkContent {
+    width: 100%;
+  }
+
+  #yosemite {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .container1, .container2, .container3, .container4, .container5 {
+    width: 90%;
+  }
+
+ .graphSection {
+    display: none;
+  }
+ 
+  svg {
+    height: 200px;
+    width: 200px;
+    margin-left: -170px;
+  }
+
+  .nextSection {
+    font-size: 14px;
+    margin: -20px 35px 0px 15px;
+  }
+
+  .imageSection1, .imageSection2, .imageSection3 {
+    margin-top: -5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  #headingText1 {
+    font-size: 22px;
+    margin-left: 45px;
+    padding-top: 20px;
+  }
+
+  #headingText2 {
+    font-size: 22px;
+    margin-left: 60px;
+    padding-top: 20px;
+  }
+  #headingText3 {
+    font-size: 22px;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  #headingText4 {
+    font-size: 22px;
+    margin-left: -20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #headingText5 {
+    font-size: 22px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  .col-sm-4 {
+    margin-top: -60px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+
+  .sideSection {
+    display: none;
+  }
+
+  .col-sm-7 {
+    height: 250px;
+  }
+
+  #imgSection1 {
+    height: 200px;
+  }
+
+  #imgSection2 {
+    height: 240px;
+  }
+
+  #imgSection3 {
+    height: 280px;
+  }
+
+  #imgSection4 {
+    height: 260px;
+  }
+
+  #imgSection5 {
+    height: 280px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #glacierImage, #grandCanyonImage, #greatSmokeyImage, #yellowstoneImage, #yosemiteImage {
+    display: none;
+  }
+
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 370px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: -10px;
+    margin-top: 40px;
+    margin-bottom: -70px;
+  }
+
+  #animal-image4 {
+    width: 370px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: -10px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+
+  .footer {
+    height: 78%;
+  }
+
+  #footerLine {
+    margin-left: -40px;
+    margin-right: -10px;
+    margin-top: 20px;
+    border-color: white;
+    display: block;
+  }
+
+
+  #cUs {
+    margin-left: -10px;
+    margin-top: 40px;
+  }
+
+  #folUs {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: -40px;
+  }
+
+  #youTube, #instagram, #linkedIn, #twitter {
+    margin-left: -15px;
+  }
+
+  #popPosts {
+    display: none;
+  }
+
+  #li1, #li2, #li3, #li4{
+    margin-left: -25px;
+    margin-right: 10px;
+  }
+
+  #remember {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #contactUs {
+    text-align: center;
+  }
+ 
+  .hu-third {
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  #thankYou {
+    padding: 0px;
+  }
+
+  #followUs {
+    padding-left: 40px;
+  } 
+}
+
+@media (max-width:411px) {
+  .homepage {
+    width: 100%
+  }
+
+  #logo2 {
+    height: 150px;
+  }
+
+  .close1 {
+    margin-top: -160px;
+  }
+
+  #logo2 {
+    margin-top: -40px;
+  }
+
+  .homepage-logo{
+    top: 12%;
+    height: 240px;
+  }
+
+  #missionText {
+    margin-top: -20px;
+  }
+
+  #donateModal {
+    width: 90%;
+    height: 95%;
+  }
+
+  #covidModal {
+    width: 90%;
+    height: 80%;
+    margin-left: 20px;
+  }
+
+  .modal-footer {
+    margin-top: -100px;
+  }
+
+  #headingText1, #headingText2, #headingText3, #headingText4, #headingText5 {
+    margin-top: 80px;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 365px;
+  }
+
+  #animal-image4 {
+    width: 365px;
+    margin-bottom: -40px;
+  }
+
+  .footer {
+    height: 65%;
+    width: 100%;
+  }
+
+  #youTube, #instagram, #linkedIn, #twitter {
+    margin-left: -10px;
+  }
+
+  #cUs {
+    margin-top: 40px;
+  }
+
+  #remember {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+@media (max-width:375px) {
+  .homepage {
+    width: 100%;
+  }
+  
+  #logo {
+    margin-top: -60px;
+  }
+
+  .modal-content {
+    height: 65%;
+  }
+
+  #donateModal {
+    width: 90%;
+  }
+
+  #covidModal {
+    width: 90%;
+    height: 85%;
+    margin-left: 20px;
+  }
+
+  .close2 {
+    margin-left: 230px;
+    margin-top: -10px
+  }
+
+  #leaveNoTrace {
+    margin-left: -260px;
+  }
+
+  #logo2{
+    height: 27%;
+    margin-left: 60px;
+    margin-top: -20px;
+  }
+
+  .close1 {
+    margin-top: -160px;
+  }
+
+  #myBtn, #myBtn2, #myBtn3 {
+    font-size: 16px;
+  }
+
+  .homepage-logo{
+    top: 12%;
+    height: 220px;
+  }
+
+  .missionSpace {
+    height: 47%;
+    bottom: 4%;
+  }
+
+  #headingTextMission {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  #missionText {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  
+  #homepageLink {
+    margin-left: 20px;
+    margin-top: -40px;
+    font-size: 18px;
+  }
+
+  #arrow {
+    top: 80%;
+    right: 68%;
+  }
+
+  #imgSection1 {
+    height: 220px;
+  }
+
+  #imgSection2 {
+    height: 260px;
+  }
+
+  #imgSection3{
+    height: 300px;
+  }
+
+  #imgSection4 {
+    height: 280px;
+  }
+
+  #imgSection5 {
+    height: 300px;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 335px;
+    margin-top: 40px;
+  }
+
+  #animal-image4 {
+    width: 335px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+  
+  .graphSection {
+    height: 400px;
+  }
+  
+  .footer {
+    height: 75%;
+    top: -8%;
+    width: 100%;
+  }
+}
+
+@media (max-width:360px) {
+  .homepage {
+    width: 100%;
+  }
+
+  .homepage-logo {
+    top: 8%;  }
+
+  .missionSpace {
+    height: 50%;
+    bottom: 1%;
+  }
+
+  #missionText {
+    margin-top: -10px;
+  }
+
+  #homepageLink {
+    left: -15%;
+    font-size: 16px;
+  }
+
+  #arrow {
+    left: 47%;
+    bottom: 5%;
+  }
+
+  #covidModal {
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+  }
+
+  .modal-footer {
+    margin-bottom: -390px;
+  }
+
+  #leaveNoTrace {
+    margin-left: -250px;
+  }
+
+  .close2 {
+    margin-left: 220px;
+  }
+
+  #headingText1, #headingText2, #headingText3, #headingText4, #headingText5 {
+    margin-top: 60px;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image5 {
+    width: 320px;
+  }
+
+  #animal-image4 {
+    width: 320px;
+    margin-bottom: -60px;
+  }
+
+  .info {
+    height: 84%;
+  }
+}
+
+@media (max-width:320px) {
+  .homepage {
+    width: 100%;
+  }
+
+  .homepage-logo {
+    top: 5%;
+  }
+
+
+  #missionText {
+    font-size: 14px;
+  }
+
+  #homepageLink {
+    font-size: 14px;
+    margin-top: -20px;
+    left: -20%;
+  }
+
+  #arrow {
+    left: 25%;
+  }
+
+  #donateModal {
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .close1 {
+    margin-top: -180px;
+  }
+
+  #covidModal {
+    display: flex;
+  }
+
+  #logo2 {
+    width: 70%;
+    height: 60%;
+    margin-left: 40px;
+  }
+
+  #animal-image1, #animal-image2, #animal-image3, #animal-image4, #animal-image5 {
+    width: 112%;
+    margin-bottom: -60px;
+    margin-left: -10px;
+  }
+
+  #headingText1, #headingText2 {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  #headingText3, #headingText5 {
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #headingText4 {
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .info {
+    height: 84%;
+  }
+
+}

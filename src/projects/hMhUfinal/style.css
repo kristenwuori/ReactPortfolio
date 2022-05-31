@@ -1,0 +1,952 @@
+h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: black;
+    line-height: 1.8;
+    background-color: rgb(100, 135, 79); 
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-color: rgb(100, 135, 79); 
+    min-height: 100%;
+}
+
+/* Second image (Do you need help) */
+.bgimg-2 {
+    background-image: url(images/disaster2edit.jpg);
+    min-height: 500px;
+}
+
+/* Third image (Do You Want to Help) */
+.bgimg-3 {
+    background-image: url(images/Disaster-aid\ \(7\).jpg);
+    min-height: 500px;
+}
+
+/* Fourth Image (Reviews) */
+.bgimg-4 {
+    background-image: url(images/Disaster-aid\ \(4\).jpg);
+    min-height: 500px;
+}
+
+#myNavbar {
+    background-color: rgb(100, 135, 79);
+    border-color: rgb(31, 46, 132);
+    border-style: solid;
+}
+
+.navhome, .needhelp, .wanttohelp, .reviews{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 105px;
+    text-shadow: 1px 1px 1px  black;
+}
+
+.n2home, .n2need, .n2want, .n2reviews{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 190px;
+    text-shadow: 1px 1px 1px  black;
+}
+
+#logo{
+    margin-left: 450px;
+    height: 450px;
+    width: 650px;
+    margin-top: 50px;
+}
+
+.top {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 670px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 1px  black; 
+}
+
+ a:hover{
+    color: rgb(31, 46, 132);
+}
+
+#statement {
+    text-align: center;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:white;
+    font-size: 20px;
+}
+
+#quote {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 75px;
+    font-family: Segoe script;
+    margin-left: 75px;
+    color: white;
+}
+
+/* author of the quote */
+ #author{
+     color:white;
+     margin-left: 945px;
+     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     FONT-SIZE: 20PX;
+ }
+ /* quote button */
+#new-quote {
+    margin-left: 710px;
+    text-align: center;
+}
+
+#check, #info {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#mission {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    color: white;
+    font-family: segoe script;
+}
+
+#receive {
+    padding-left: 60px;
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#receiving{
+    margin-right: 90px;
+}
+
+#newsletter {
+    margin-left: 645px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px; 
+    color: gray;
+}
+
+#submit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+#Need, #Want, #custreviews {
+    font-size: 40px;
+    text-shadow: 3px 4px 2px rgb(100, 135, 79); 
+    color: white;
+    margin-left: 50px;
+}
+
+#what, #profileExplanation {
+    text-align: center;
+    color:white;
+}
+
+#create {
+    text-align: center;
+    font-family: segoe script;
+    font-size: 30px;
+}
+
+#baby,#household, #clothing, #food, #toiletries, #transportation {
+    margin-left: 120px;
+}
+
+.labels{
+    color:white;
+    font-size: 20px;
+}
+#additional {
+    margin-left: 590px;
+    height: 200px;
+    width: 400px;
+}
+
+#first, #last, #street, #zip {
+    margin-left: 153px;
+    width: 200px;
+    color: gray;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+#email {
+    margin-left: 660px;
+    width: 200px;
+    color: gray;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#zipcode, #E-mail, #password, #username {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#options1 {
+    margin-left: -2px;
+    width: 200px;
+}
+
+#options2 {
+    margin-left: -20px;
+    width: 200px;
+}
+
+#text {
+    width: 400px;
+    margin-left: 75px;
+    height: 100px;
+    font-family: segoe print;
+}
+
+#go {
+    border-radius: 10px;
+    margin-left: 215px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#label1 {
+    margin-left: 180px;
+}
+
+#label2 {
+    margin-left: 200px;
+}
+
+ #label, #legend, #text { 
+    text-align: center;
+}
+
+#button {
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#button-container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50%;
+    grid-template-areas:
+        "profile-option login-option";
+}
+
+#left {
+    border-radius: 10px;
+}
+
+#right {
+    border-radius: 10px;
+}
+
+.buttons {
+    font-family: segoe print;
+}
+
+#create-profile {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#clientQuotes {
+    /* border-bottom: white 1px solid; */
+    text-align: center;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    font-size:30px;
+    padding-top: 10px;
+}
+
+hr{
+    margin:420px;
+    background-color: white;
+    
+}
+#custQuotes {
+    text-align: center;
+}
+
+#custQuote1 {
+    padding-left: 40px;
+}
+
+#custQuote2 {
+    padding-left: 50px;
+}
+
+#custQuote3 {
+    padding-left: 50px;
+}
+
+#custQuote4 {
+    padding-left: 60px;
+}
+
+#thank-you {
+    text-align: center;
+}
+
+
+/* media query for ipad only */
+
+@media(max-width:768px) {
+
+    body,h1,h2,h3,h4,h5,h6 {
+         font-family: segoe print; 
+    }
+
+    body, html {
+        height: 100%;
+        width:140%;
+        color: black;
+        line-height: 1.8;
+        background-color: rgb(100, 135, 79);     
+    }
+
+    /* .bgimg-1 {
+        background-image: url(Images/smallerlogo.jpg);
+        min-height: 200%;
+    } */
+
+
+    #myNavbar {
+        background-color: rgb(100, 135, 79);  
+    }
+        
+        
+    .navhome, .needhelp, .wanttohelp,.reviews {
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 70px;
+        text-shadow: 1px 1px 1px  black;
+    }
+     
+    #quote {
+        font-size: 30px;
+        
+    }
+
+    #author,  #receive, #newsletter,#statement, #what {
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+   
+    #new-quote,#check, #submit {
+        font-size: 20px;
+    }
+  
+     
+    .labels {
+       font-size: 25px;
+       margin-left: -80px;
+    
+    }
+
+    #info {
+        font-size: 25px;
+    }
+
+    #receiving {
+        margin-left: 60px;
+       
+    }
+ 
+hr{
+    margin:360px;
+}
+ 
+  
+
+    #email-submit,#email,#submit,#first,#last,#street,#zip,#newsletter {
+        /* margin-right:60px; */
+         font-size: 20px;
+    }
+
+    #top-button {
+        margin-left: -40px;
+    }
+
+}
+
+
+@media(max-width:568px) {
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: segoe print;
+    }
+
+    body, html {
+        height: 100%;
+        width:160%;
+        color: black;
+        line-height: 1.8;
+         background-color: rgb(100, 135, 79); 
+    }
+}
+
+
+/* CSS hu-styles */
+.hu-hoverable tbody tr:hover,.hu-ul.hu-hoverable li:hover {
+    background-color:#ccc;
+}
+
+.hu-centered tr th,.hu-centered tr td {
+    text-align:center;
+}
+
+.hu-table td,.hu-table th,.hu-table-all td,.hu-table-all th {
+    padding:8px 8px;
+    display:table-cell;
+    text-align:left;
+    vertical-align:top;
+}
+
+.hu-btn,.hu-button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.hu-btn:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.hu-btn,.hu-button {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}   
+
+.hu-btn.hu-disabled:hover,.hu-btn:disabled:hover {
+    box-shadow:none;
+}
+
+.hu-badge,.hu-tag {
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+}
+
+.hu-ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.hu-ul li {
+    padding:8px 16px;
+    border-bottom:1px solid #ddd;
+}
+
+.hu-input {
+    padding:8px;display:block;
+    border:none;
+    border-bottom:1px solid #ccc;width:100%;
+}
+
+.hu-select {
+    padding:9px 0;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+.hu-dropdown-click, .hu-dropdown-hover {
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.hu-dropdown-hover:hover .hu-dropdown-content {
+    display:block
+}
+
+.hu-dropdown-hover:hover > .hu-button:first-child, .hu-dropdown-click:hover > .hu-button:first-child {
+    background-color:#ccc;
+    color:#000;
+}
+
+.hu-dropdown-content {
+    cursor:auto;color:#000;
+    background-color:#fff;
+    display:none;
+    position:absolute;
+    min-width:160px;
+    margin:0;
+    padding:0;
+    z-index:1;
+}
+
+.hu-check,.hu-radio {
+    width:24px;
+    height:24px;
+    position:relative;
+    top:6px;
+}
+
+.hu-bar-block .hu-dropdown-hover,.hu-bar-block .hu-dropdown-click {
+    width:100%;
+}
+
+.hu-bar-block .hu-dropdown-hover .hu-dropdown-content,.hu-bar-block .hu-dropdown-click .hu-dropdown-content {
+    min-width:100%;
+}
+
+.hu-bar-block .hu-dropdown-hover .hu-button,.hu-bar-block .hu-dropdown-click .hu-button {
+    width:100%;
+    text-align:left;padding:8px 16px;
+}
+
+.hu-modal {
+    z-index:3;
+    display:none;
+    padding-top:100px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+}
+
+.hu-modal-content {
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:600px;
+}
+
+.hu-bar {
+    width:100%;
+    overflow:hidden;
+}
+
+.hu-center .hu-bar {
+    display:inline-block;
+    width:auto;
+}
+
+.hu-bar .hu-bar-item {
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+}
+
+.hu-bar .hu-dropdown-hover,.hu-bar .hu-dropdown-click {
+    position:static;
+    float:left;
+}
+
+.hu-bar .hu-button {
+    white-space:normal;
+}
+
+.hu-bar-block .hu-bar-item {
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+
+.hu-bar-block.hu-center .hu-bar-item {
+    text-align:center
+}
+
+.hu-block {
+    display:block;
+    width:100%;
+}
+
+.hu-responsive {
+    display:block;
+    overflow-x:auto;
+}
+
+.hu-container:after, .hu-container:before, .hu-panel:after, .hu-panel:before, .hu-row:after, .hu-row:before, .hu-row-padding:after, .hu-row-padding:before,
+.hu-cell-row:before, .hu-cell-row:after, .hu-clear:after, .hu-clear:before, .hu-bar:before, .hu-bar:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.hu-col,.hu-half,.hu-third,.hu-twothird,.hu-threequarter,.hu-quarter {
+    float:left;
+    width:100%;
+}
+
+
+@media (min-width:601px) {
+
+.hu-col.m4,.hu-third {
+    width:33.33333%;
+}}
+    
+.hu-content {
+    max-width:980px;
+    margin:auto;
+}
+
+.hu-hide {
+    display:none!important;
+}
+
+@media (max-width:600px) {
+    .hu-modal-content {
+        margin:0 10px;width:auto!important;
+    }
+
+    .hu-modal {
+        padding-top:30px;
+    }
+
+    .hu-dropdown-hover.hu-mobile .hu-dropdown-content, .hu-dropdown-click.hu-mobile .hu-dropdown-content {
+        position:relative;
+    }	
+
+    .hu-hide-small {
+        display:none!important;
+    }
+
+    .hu-mobile {
+        display:block;
+        width:100%!important;
+    }
+    .hu-bar-item.hu-mobile, .hu-dropdown-hover.hu-mobile, .hu-dropdown-click.hu-mobile {
+        text-align:center;
+    }
+
+    .hu-dropdown-hover.hu-mobile, .hu-dropdown-hover.hu-mobile .hu-btn, .hu-dropdown-hover.hu-mobile .hu-button, .hu-dropdown-click.hu-mobile,.hu-dropdown-click.hu-mobile .hu-btn,.hu-dropdown-click.hu-mobile .hu-button {
+        width:100%;
+    }}
+
+@media (max-width:768px) {
+    .hu-modal-content {
+        width:500px;
+    }
+
+    .hu-modal {
+        padding-top:50px;
+    }}
+
+@media (min-width:993px){
+    .hu-modal-content {
+        width:900px;
+    }
+
+    .hu-hide-large {
+        display:none!important;
+    }
+
+    .hu-sidebar.hu-collapse {
+        display:block!important;
+    }}
+
+
+.hu-top,.hu-bottom {
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+
+.hu-top {
+    top:0;
+}
+
+.hu-bottom {
+    bottom:0;
+}
+
+.hu-display-topright {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.hu-circle {
+    border-radius:50%;
+}
+
+.hu-row-padding, .hu-row-padding>.hu-half, .hu-row-padding>.hu-third, .hu-row-padding>.hu-twothird, .hu-row-padding>.hu-threequarter, .hu-row-padding>.hu-quarter, .hu-row-padding>.hu-col {
+    padding:0 8px
+}
+
+.hu-container,.hu-panel {
+    padding:0.01em 16px;
+}
+
+.hu-panel {
+    margin-top:16px;margin-bottom:16px;
+}
+
+.hu-card,.hu-card-2 {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.hu-card-4,.hu-hover-shadow:hover {
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.hu-animate-left {
+    position:relative;
+    animation:animateleft 0.4s;
+}
+
+@keyframes animateleft {
+    from{left:-300px;opacity:0} 
+    to{left:0;opacity:1}
+}
+
+.hu-animate-right {
+    position:relative;
+    animation:animateright 0.4s;
+}
+
+@keyframes animateright {
+    from{right:-300px;opacity:0} 
+    to{right:0;opacity:1}
+}
+
+.hu-small {
+    font-size:12px!important;
+}
+
+.hu-large {
+    font-size:18px!important;
+}
+
+.hu-left-align {
+    text-align:left!important;
+}
+
+.hu-right-align {
+    text-align:right!important;
+}
+
+.hu-justify {
+    text-align:justify!important;
+}
+
+.hu-center {
+    text-align:center!important;
+}
+
+.hu-border-0 {
+    border:0!important;
+}
+
+.hu-border {
+    border:1px solid #ccc!important;
+}
+
+.hu-border-top {
+    border-top:1px solid #ccc!important;
+}
+
+.hu-border-bottom {
+    border-bottom:1px solid #ccc!important;
+}
+
+.hu-border-left {
+    border-left:1px solid #ccc!important;
+}
+
+.hu-border-right {
+    border-right:1px solid #ccc!important;
+}
+
+.hu-section,.hu-code {
+    margin-top:16px!important;margin-bottom:16px!important;
+}
+
+.hu-margin {
+    margin:16px!important;
+}
+
+.hu-margin-top {
+    margin-top:16px!important;
+}
+
+.hu-margin-bottom {
+    margin-bottom:16px!important;
+}
+
+.hu-margin-left {
+    margin-left:16px!important;
+}
+
+.hu-margin-right {
+    margin-right:16px!important;
+}
+
+.hu-padding-small {
+    padding:4px 8px!important;
+}
+
+.hu-padding {
+    padding:8px 16px!important;
+}
+
+.hu-padding-large {
+    padding:12px 24px!important;
+}
+
+.hu-padding-16 {
+    padding-top:16px!important;
+    padding-bottom:16px!important;
+}
+
+.hu-padding-24 {
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+}
+
+.hu-padding-32 {
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+}
+
+.hu-padding-48 {
+    padding-top:48px!important;
+    padding-bottom:48px!important;
+}
+
+.hu-padding-64 {
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+}
+
+.hu-left {
+    float:left!important;
+}
+
+.hu-right {
+    float:right!important;
+}
+
+.hu-button:hover {
+    color:#000!important;
+    background-color:#ccc!important;
+}
+
+.hu-transparent,.hu-hover-none:hover {
+    background-color:transparent!important;
+}
+
+.hu-hover-none:hover {
+    box-shadow:none!important;
+}
+
+
+/* Colors */
+
+.hu-green,.hu-hover-green:hover {
+    color:#fff!important;
+    background-color:#4CAF50!important;
+}
+.hu-blue,.hu-hover-blue:hover{
+    color:white;
+    background-color: rgb(31, 46, 132)!important;
+    border-color:rgb(31, 46, 132)!important;
+}
+.hu-indigo,.hu-hover-indigo:hover {
+    color:#fff!important;
+    background-color:#3f51b5!important;
+}
+
+.hu-dark-gray {
+    color:rgb(182, 178, 178);
+}
+
+.hu-red,.hu-hover-red:hover {
+    color:#fff!important;
+    background-color:#f44336!important;
+}
+
+.hu-black,.hu-hover-black:hover {
+    color:#fff!important;
+    background-color:#000!important;
+}
+
+.hu-grey,.hu-hover-grey:hover,.hu-gray,.hu-hover-gray:hover {
+    color:#000!important;
+    background-color:#9e9e9e!important;
+}
+
+.hu-light-grey,.hu-hover-light-grey:hover,.hu-light-gray,.hu-hover-light-gray:hover {
+    color:#000!important;
+    background-color:#f1f1f1!important;
+}
+
+.hu-dark-grey,.hu-hover-dark-grey:hover,.hu-dark-gray,.hu-hover-dark-gray:hover {
+    color:#fff!important;
+    background-color:#616161!important;
+}
+
+.hu-pale-red,.hu-hover-pale-red:hover {
+    color:#000!important;
+    background-color:#ffdddd!important;
+}
+.hu-earth-green{
+    background-color: rgb(100, 135, 79);
+    color:white;
+}

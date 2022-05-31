@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<title>helpMEhelpU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<body>
+
+  <!-- Navbar -->
+
+  <div>
+
+    <div id="myNavbar">
+
+      <a href="#home" class="navhome">Home</a>
+
+      <a href="#needhelp" class="needhelp ">Do You Need Help?</a>
+
+      <a href="#want2help" class="wanttohelp">Do You Want To Help?</a>
+
+      <a href="#reviews" class="reviews">Reviews</a>
+
+      <button onclick="document.getElementById('id02').style.display='block' " class="hu-blue"
+        style="margin-left:100px; margin-bottom:5px">Login</button>
+
+      <button onclick="document.getElementById('id01').style.display='block' " class="hu-blue"
+        style="margin-left:50px; margin-bottom:5px ">Create Profile</button>
+
+
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+
+  <div class="bgimg-1" id="home">
+    <img id="logo" src="Images/logopaint.png" class="hu-circle alt=" logo">
+    <h1 id="mission">Connecting Communities In Their Time Of Need</h1>
+    <!-- This is hMhU's mission statement -->
+
+    <h4 id="statement">Our mission is to create a well-known local resource for individuals that are looking for
+      assistance with the daily needs of life and/or in times of crises. We’re assisting people to acquire what they
+      need from their
+      community at all times; especially when tragedy strikes. People may connect to deliver goods, give/receive rides
+      to
+      appointments or other important tasks, or create a profile to utilize the barter and trade page to exchange one
+      type of item for another.</h4>
+
+    <br>
+    <!-- The following is to create a new quote on the page every time the button is clicked -->
+
+    <p id="quote"></p>
+
+    <p id="author"></p>
+
+
+    <button id="new-quote" class="hu-blue">New Quote</button>
+
+    <!-- This section is for the user to enter their email to receive our newsletter -->
+
+    <div>
+
+      <br>
+
+      <div id="receiving">
+
+        <p id="receive">If you would like to receive our newsletter,
+
+          <br> please enter your email below.</p>
+
+      </div>
+
+      <form>
+
+        <input id="newsletter" type="email" name="email" value="E-Mail Address">
+        <input id="submit" class="hu-blue" type="Submit">
+
+      </form>
+    </div>
+  </div>
+
+  <br>
+
+  <br>
+
+  </div>
+
+
+  <!-- Navbar 2 -->
+
+  <div>
+
+    <div id="myNavbar">
+
+      <a href="#home" class="n2home">Home</a>
+
+      <a href="#needhelp" class="n2need">Do You Need Help?</a>
+
+      <a href="#want2help" class="n2want">Do You Want To Help?</a>
+
+      <a href="#reviews" class="n2reviews">Reviews</a>
+
+
+    </div>
+  </div>
+
+  <!-- Second Parallax Image  -->
+
+  <div id="needhelp">
+
+    <div class="bgimg-2">
+
+      <div>
+
+        <span id="Need" class="w3-xxlarge w3-wide">Do You Need Help?</span>
+
+      </div>
+    </div>
+
+    <!-- Need Help Section with checkboxes for items needed -->
+
+    <h3 id="what">What Do You Need Help With?</h3>
+
+    <p id="check">Check All That Apply.</p>
+
+    <div class="labels">
+
+      <label for="baby items"><input id="baby" type="checkbox" name="help" value="baby items" />Baby Items</label>
+
+      <label for="household items"><input id="household" type="checkbox" name="help" value="household items" />Household
+        Items</label>
+
+      <label for="clothing"><input id="clothing" type="checkbox" name="help" value="clothing" />Clothing</label>
+
+      <label for="food"><input id="food" type="checkbox" name="help" value="food" />Food</label>
+
+      <label for="toiletries"><input id="toiletries" type="checkbox" name="help" value="toiletries" />Toiletries</label>
+
+      <label for="transportation"><input id="transportation" type="checkbox" name="help"
+          value="transportation" />Transportation</label>
+
+    </div>
+
+    <br>
+    <br>
+
+    <p id="info">Please enter your information below along with any special request
+      and we'll get back to you in a timely manner.</p>
+
+    <!-- The following is the additional text area for user to add special requests -->
+
+    <textarea id="additional"></textarea>
+
+    <br>
+    <br>
+
+    <!-- The following is how the user inputs their information if they are in need of help -->
+
+    <input id="first" type="text" name="First Name" value=" First Name" />
+    <input id="last" type="text" name="Last Name" value=" Last Name" />
+    <input id="street" type="text" name="Street Address" value=" Street Address" />
+    <input id="zip" type="text" name="Zip-Code" value=" Zip-Code" />
+
+    <br>
+    <br>
+
+    <div id="email-submit">
+
+      <form>
+
+        <input id="email" type="email" name="Email" value="E-Mail Address">
+        <input id="submit" class="hu-blue" type="submit">
+
+      </form>
+    </div>
+
+    <br>
+    <br>
+
+  </div>
+  </div>
+
+  <!-- Navbar 3-->
+
+  <div>
+
+    <div id="myNavbar">
+
+      <a href="#home" class="n2home">Home</a>
+
+      <a href="#needhelp" class="n2need">Do You Need Help?</a>
+
+      <a href="#want2help" class="n2want">Do You Want To Help?</a>
+
+      <a href="#reviews" class="n2reviews">Reviews</a>
+
+
+    </div>
+  </div>
+
+  <!-- Third Parallax Image  -->
+
+  <div id="want2help">
+
+    <div class="bgimg-3">
+
+      <div>
+
+        <span id="Want">Do You Want To Help?</span>
+
+      </div>
+    </div>
+
+    <!-- Want To Help Section with checkboxes for items offered -->
+
+    <div>
+
+      <h3 id="what">What Can You Help With?</h3>
+
+      <p id="check">Check All That Apply.</p>
+
+      <div class="labels">
+
+        <label for="baby items"><input id="baby" type="checkbox" name="help" value="baby items" />Baby Items</label>
+
+        <label for="household items"><input id="household" type="checkbox" name="help"
+            value="household items" />Household Items</label>
+
+        <label for="clothing"><input id="clothing" type="checkbox" name="help" value="clothing" />Clothing</label>
+
+        <label for="food"><input id="food" type="checkbox" name="help" value="food" />Food</label>
+
+        <label for="toiletries"><input id="toiletries" type="checkbox" name="help"
+            value="toiletries" />Toiletries</label>
+
+        <label for="transportation"><input id="transportation" type="checkbox" name="help"
+            value="transportation" />Transportation</label>
+
+      </div>
+
+      <br>
+      <br>
+
+      <p id="info">Please give specific details of how you can help and when you are available.</p>
+
+      <!-- Additional text area to add user-specific information for how they can help others -->
+
+      <textarea id="additional"></textarea>
+
+      <br>
+      <br>
+
+      <!-- The following is how the user inputs their information if they want to help others -->
+
+      <input id="first" type="text" name="First Name" value=" First Name" />
+      <input id="last" type="text" name="Last Name" value=" Last Name" />
+      <input id="street" type="text" name="Street Address" value=" Street Address" />
+      <input id="zip" type="text" name="Zip-Code" value=" Zip-Code" />
+
+      <br>
+      <br>
+
+      <form>
+
+        <input id="email" type="email" name="Email" value="E-Mail Address">
+        <input id="submit" class="hu-blue" type="submit">
+
+      </form>
+
+      <br>
+      <br>
+
+      <!-- Navbar 4-->
+
+      <div>
+
+        <div id="myNavbar">
+
+          <a href="#home" class="n2home">Home</a>
+
+          <a href="#needhelp" class="n2need">Do You Need Help?</a>
+
+          <a href="#want2help" class="n2want">Do You Want To Help?</a>
+
+          <a href="#reviews" class="n2reviews">Reviews</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fourth Parallax Image  -->
+
+  <div id="reviews">
+
+    <div class="bgimg-4">
+
+      <!-- Review Section of Page -->
+
+      <div>
+
+        <span id="custreviews">Reviews</span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="hu-container">
+
+
+
+    <!-- The following is the code for the pop-up box for the user to input their information for their new profile -->
+
+    <div id="id01" class="hu-modal">
+
+      <div class="hu-modal-content hu-card-4 hu-animate-zoom" style="max-width:600px">
+
+        <div class="hu-center"><br>
+
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="hu-button hu-xlarge hu-hover-red hu-display-topright" title="Close Modal">&times;</span>
+
+          <img src="Images/logopaint.png" alt="Avatar" style="width:60%" class="hu-circle hu-margin-top">
+
+          <p id="create-profile">To create a profile for our barter and trade page, please fill out the form below.
+            If there is any additional information you would like to share, please utilize the text box below (i.e. if
+            you have multiple items you can barter and trade with, or if there are certain times you would be available
+            to offer transportation, etc).</p>
+
+        </div>
+
+        <form class="hu-container" action="#">
+
+          <div class="hu-section">
+
+            <h3>Create Profile</h3>
+
+            <label><b>First Name</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter First Name"
+              name="firstname" required>
+
+            <label><b>Last Name</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter Last Name" name="lastname"
+              required>
+
+            <label><b>Username</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter Username" name="usrname"
+              required>
+
+            <label><b>Password</b></label>
+            <input class="hu-input hu-border" type="password" placeholder="Enter Password" name="psw" required>
+
+            <br>
+
+            <label><b>E-Mail</b></label>
+            <input class="hu-input hu-border" type="email" placeholder="Enter Email" name="email" required>
+
+            <br>
+
+            <label><b>Zip Code</b></label>
+            <input class="hu-input hu-border" type="number" placeholder="Enter Zip Code" name="zip-code" required>
+
+            <br>
+
+            <label id="label1"><b>Items I Have To Barter With:</b>
+
+              <br>
+
+              <select id="options1">
+
+                <option type="option">None</option>
+                <option type="option">Paper Goods</option>
+                <option type="option">Sanitizing Agents</option>
+                <option type="option">Baby Items</option>
+                <option type="option">Food Items</option>
+                <option type="option">Toiletries</option>
+                <option type="option">Clothing</option>
+                <option type="option">Transportation</option>
+                <option type="option">Other</option>
+
+              </select>
+            </label>
+
+            <br>
+            <br>
+
+            <label id="label2"><b>Items I'm looking for:</b>
+
+              <br>
+
+              <select id="options2">
+
+                <option type="option">None</option>
+                <option type="option">Paper Goods</option>
+                <option type="option">Sanitizing Agents</option>
+                <option type="option">Baby Items</option>
+                <option type="option">Food Items</option>
+                <option type="option">Toiletries</option>
+                <option type="option">Clothing</option>
+                <option type="option">Transportation</option>
+                <option type="option">Other</option>
+
+              </select>
+            </label>
+
+            <br>
+            <br>
+
+            <fieldset id="fieldset">
+
+              <legend id="legend"><b><i>Additional Information</i></b></legend>
+
+              <label id="AdditionalInfo" type="text"> </label>
+
+              <textarea id="text" placeholder=""></textarea>
+
+              <br>
+
+            </fieldset>
+
+
+
+            <button class="hu-button hu-block hu-earth-green hu-section hu-padding" type="submit">Create
+              Profile</button>
+
+            <input class="hu-check hu-margin-top" type="checkbox" checked="checked">Remember me
+
+          </div>
+        </form>
+
+        <div class="hu-container hu-border-top hu-padding-16 hu-light-grey">
+
+          <button onclick="document.getElementById('id01').style.display='none'" type="button"
+            class="hu-button hu-red">Cancel</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- The following is the code for the pop-up box for the user to input their username and password to login to the website -->
+
+    <div id="id02" class="hu-modal">
+
+      <div class="hu-modal-content hu-card-4 hu-animate-zoom" style="max-width:600px">
+
+        <div class="hu-center">
+
+          <br>
+
+          <span onclick="document.getElementById('id02').style.display='none'"
+            class="hu-button hu-xlarge hu-hover-red hu-display-topright" title="Close Modal">&times;</span>
+
+          <img src="Images/logopaint.png" alt="Avatar" style="width:60%" class="hu-circle hu-margin-top">
+
+        </div>
+
+        <form class="hu-container" action="#">
+
+          <div class="hu-section">
+
+            <h3>Login</h3>
+
+            <label><b>Username</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter Username" name="usrname"
+              required>
+
+            <label><b>Password</b></label>
+            <input class="hu-input hu-border" type="password" placeholder="Enter Password" name="psw" required>
+
+            <button class="hu-button hu-block hu-earth-green hu-section hu-padding" type="submit">Login</button>
+
+            <input class="hu-check hu-margin-top" type="checkbox" checked="checked">Remember me
+
+          </div>
+        </form>
+
+        <div class="hu-container hu-border-top hu-padding-16 hu-light-grey">
+
+          <button onclick="document.getElementById('id02').style.display='none'" type="button"
+            class="hu-button hu-red">Cancel</button>
+
+          <button onclick="document.getElementById('id03').style.display='block' " class="hu-button hu-blue">Forgot
+            Password</button>
+
+        </div>
+      </div>
+    </div>
+    <div id="id03" class="hu-modal">
+
+      <div class="hu-modal-content hu-card-4 hu-animate-zoom" style="max-width:600px">
+
+        <div class="hu-center">
+
+          <br>
+
+          <span onclick="document.getElementById('id03').style.display='none'"
+            class="hu-button hu-xlarge hu-hover-red hu-display-topright" title="Close Modal">&times;</span>
+
+          <img src="Images/logopaint.png" alt="Avatar" style="width:60%" class="hu-circle hu-margin-top">
+
+        </div>
+        <form class="hu-container" action="#">
+
+          <div class="hu-section">
+
+            <h3>Verify Information</h3>
+
+            <label><b>First Name</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter First Name"
+              name="firstname" required>
+
+            <label><b>Last Name</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter Last Name" name="lastname"
+              required>
+
+            <label><b>Username</b></label>
+            <input class="hu-input hu-border hu-margin-bottom" type="text" placeholder="Enter Username" name="usrname"
+              required>
+
+            <br>
+
+            <label><b>E-Mail</b></label>
+            <input class="hu-input hu-border" type="email" placeholder="Enter Email" name="email" required>
+
+            <br>
+
+            <label><b>Zip Code</b></label>
+            <input class="hu-input hu-border" type="number" placeholder="Enter Zip Code" name="zip-code" required>
+
+            <button class="hu-button hu-block hu-earth-green hu-section hu-padding hu-margin-right" type="submit">Send
+              Password</button>
+
+          </div>
+        </form>
+
+        <div class="hu-container hu-border-top hu-padding-16">
+
+          <button onclick="document.getElementById('id03').style.display='none'" type="button"
+            class="hu-button hu-red">Cancel</button> </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- This section shows quotes in a slideshow that our satisfied members have said about hMhU -->
+
+    <h2 id="clientQuotes">SEE WHAT OUR MEMBERS HAVE TO SAY ABOUT hMhU</h2>
+    <hr>
+    <div id="custQuotes" class="hu-container hu-center hu-animate-left">
+
+      <img id="custQuote1" class="leftButton mySlides hu-container hu-center hu-animate-left"
+        src="Images/custQuote1.png" style="width:100%">
+      <img id="custQuote2" class="leftButton mySlides hu-container hu-center hu-animate-left"
+        src="Images/custQuote2.png" style="width:100%">
+      <img id="custQuote3" class="leftButton mySlides hu-container hu-center hu-animate-left"
+        src="Images/custQuote3.png" style="width:100%">
+      <img id="custQuote4" class="leftButton mySlides hu-container hu-center hu-animate-left"
+        src="Images/custQuote4.png" style="width:100%">
+
+      <button class="rightButton hu-blue" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <br>
+
+    <!-- This is a navigation botton to take you back to the top of the page -->
+
+    <div id="top-button">
+
+      <a href="#home" id="button" class="top" type="submit">BACK TO TOP</a>
+
+    </div>
+    <br>
+
+    <!-- The following code is for the footer -->
+
+    <footer class="hu-container hu-padding-32 hu-blue" style="margin-left:-17px;margin-right:-15px">
+
+      <div class="hu-row-padding">
+
+        <!-- This is the area with our logo and a thank you to people visiting our page -->
+
+        <div class="hu-third">
+
+          <h3>THANK YOU</h3>
+
+          <p id="thank-you">On behalf of all of us at hMhU, we thank you for visiting our site.</p>
+
+          <br>
+
+          <img src="Images/logopaint.png" alt="Avatar" style="width:50%; margin-left:120px"
+            class="hu-circle hu-margin-top hu">
+
+        </div>
+
+        <!-- These are options for visitors to get ahold of us on different platforms -->
+
+        <div class="hu-third">
+
+          <h3>VIEW US ON THESE PLATFORMS</h3>
+
+          <ul class="hu-ul hu-hoverable">
+
+            <li class="hu-padding-16">
+
+              <img src="Images/Disaster-aid 3.png" class="hu-left hu-margin-right" style="width:50px">
+
+              <span class="hu-large">YouTube</span>
+
+              <br>
+
+              <span>Check out videos @ www.Youtube.com</span>
+
+            </li>
+
+            <li class="hu-padding-16">
+
+              <img src="Images/Disaster-aid (9).jpg" class="hu-left hu-margin-right" style="width:50px">
+
+              <span class="hu-large">FaceBook</span>
+
+              <br>
+
+              <span>Check us out @ www.facebook.com</span>
+
+            </li>
+          </ul>
+        </div>
+
+        <!-- These are popular items visitors and members have access to via our website -->
+
+
+        <div class="hu-third">
+
+          <h3>POPULAR ITEMS</h3>
+
+          <p style="padding-left:30px">
+
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Transportation</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Sanitizing Agents</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Wipes</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Baby Items</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Diapers</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Formula</span>
+            <span class="hu-tag hu-earth-green hu-margin-bottom">Toiletries</span>
+            <span class="hu-tag hu-earth-green  hu-margin-bottom">Toilet paper</span>
+            <span class="hu-tag hu-earth-green  hu-margin-bottom">Hand soap</span>
+
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <!-- import jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- import bootstrap scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- import D3.js -->
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="quote.js"></script>
+
+</body>
+
+
+</html>
