@@ -1,12 +1,13 @@
 const asyncHandler = require('express-async-handler');
 
 const Blog = require('../models/blogModel');
+const User = require('../models/userModel');
 
 // @desc Get goals
 // @route GET /api/goals
 // @access Private
 const getBlogs = asyncHandler(async (req, res) => {
-    const blogs = await Blog.find()
+    const blogs = await Blog.find({ user: req.user.id })
 
     res.status(200).json(blogs)
 })
@@ -20,7 +21,8 @@ const setBlog = asyncHandler(async (req, res) => {
     }
 
     const blog = await Blog.create({
-        text: req.body.text
+        text: req.body.text,
+        user: req.user.id
     })
 
     res.status(200).json(blog)
@@ -36,6 +38,20 @@ const updateBlog = asyncHandler(async (req, res) => {
     if(!blogToUpdate) {
         res.status(400)
         throw new Error('Blog not found')
+    }
+
+    const user = await User.findById(req.user.id)
+
+    // Check for user
+    if(!user) {
+        res.status(401)
+        throw new Error('User not found')
+    }
+
+    // Make sure the logged in user matches the blog user
+    if(blogToUpdate.user.toString() !== user.id) {
+        res.status(401)
+        throw new Error('User not authorized')
     }
 
     const updatedBlog = await Blog.findByIdAndUpdate(req.params.id, req.body, 
@@ -55,7 +71,21 @@ const deleteBlog = asyncHandler(async (req, res) => {
 
     if(!blogToRemove) {
         res.status(400)
-        throw new Error('Goal not found')
+        throw new Error('Blog not found')
+    }
+
+    const user = await User.findById(req.user.id)
+
+    // Check for user
+    if(!user) {
+        res.status(401)
+        throw new Error('User not found')
+    }
+
+    // Make sure the logged in user matches the blog user
+    if(blogToRemove.user.toString() !== user.id) {
+        res.status(401)
+        throw new Error('User not authorized')
     }
 
     await blogToRemove.remove()

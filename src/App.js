@@ -8,7 +8,7 @@ import Languages from './components/LanguagesTextBox';
 import Projects from './components/ProjectsTextBox';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 function App() {
