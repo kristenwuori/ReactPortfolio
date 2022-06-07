@@ -36,7 +36,7 @@ const cards = [
 const TextBox3 = () => {
     return (
         <div className='projects-textbox'>
-            <h3>Projects</h3>
+            <h3 id='projects'>Projects</h3>
                 <div className='container'>
                     <div className='row h-100'>
                         <div class='col d-flex flex-column flex-md-row justify-content-around align-items-center'>

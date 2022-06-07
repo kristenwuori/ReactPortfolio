@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
+import { Button } from '../Button';
 import '../Navbar/Navbar.css'
 import img1 from '../../images/CroppedProfPicOfMe.jpg';
 
@@ -29,6 +30,8 @@ class Navbar extends Component {
                     })}
                     
                 </ul>
+                <Button id='signUpBtn'>Sign Up</Button>
+                <Button id='signInBtn'>Sign In</Button>
             </nav>
         )
     }

@@ -4,7 +4,7 @@ import img1 from '../images/CroppedProfPicOfMe.jpg';
 const TextBox1 = () => {
     return (
         <div className='about-me-textbox'>
-            <h3>About Me</h3>
+            <h3 id='abMe'>About Me</h3>
             <p>Innovative out-going problem solver with strong conflict resolution skills. 
                 Thoughtful leader with strong communication skills and positive outlook. 
                 <br/>

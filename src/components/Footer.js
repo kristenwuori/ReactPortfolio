@@ -13,7 +13,7 @@ import linkedin from '../images/linkedin.png';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' id='foot'>
             <Container>
                 <Row>
                     <Col className='mapPic'>

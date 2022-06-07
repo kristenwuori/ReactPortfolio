@@ -31,9 +31,9 @@ const setBlog = asyncHandler(async (req, res) => {
 // @route PUT /api/goals
 // @access Private
 const updateBlog = asyncHandler(async (req, res) => {
-    const blog = await Blog.findById(req.params.id)
+    const blogToUpdate = await Blog.findById(req.params.id)
 
-    if(!blog) {
+    if(!blogToUpdate) {
         res.status(400)
         throw new Error('Blog not found')
     }
@@ -51,14 +51,14 @@ const updateBlog = asyncHandler(async (req, res) => {
 // @route DELETE /api/goals
 // @access Private
 const deleteBlog = asyncHandler(async (req, res) => {
-    const blog = await Blog.findById(req.params.id)
+    const blogToRemove = await Blog.findById(req.params.id)
 
-    if(!blog) {
+    if(!blogToRemove) {
         res.status(400)
         throw new Error('Goal not found')
     }
 
-    await Blog.remove()
+    await blogToRemove.remove()
 
     res.status(200).json({ id: req.params.id })
 })
