@@ -53,6 +53,37 @@ h3 {
   text-align: center;
 }
 
+.register {
+  position: absolute;
+  right: 150px;
+  top: 18px;
+  color: white;
+}
+
+.login {
+  min-width: 120px;
+  color: white !important;
+}
+
+// .faUser {
+//   position: absolute;
+//   left: 100px;
+//   top: 100px;
+// }
+
+.regList {
+  list-style-type: none;
+  color: white !important;
+}
+
+.listContainer {
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // position: absolute;
+  // right: 10;
+}
+
 .text-box {
   text-align: center;
   padding: 3rem 1rem;
@@ -66,7 +97,7 @@ h3 {
   padding: 3rem 1rem;
   background-image: url('./images/blackpattern.jpg');
   color: #fff;
-  height: 110vh;
+  height: 100vh;
 }
 
 .langs-textbox {
@@ -90,7 +121,7 @@ h3 {
   padding: 3rem 1rem;
   background: linear-gradient(90deg, rgb(110, 94, 254), rgba(73, 63, 252, 1) 100%);
   color: #fff;
-  height: 45vh;
+  height: 50vh;
 }
 
 .myPic {
@@ -184,7 +215,7 @@ h3 {
   border-radius: 4px;
   position: absolute;
   left: 9%;
-  top: 620%;
+  top: 610%;
 }
 
 .add1 {
@@ -199,37 +230,30 @@ h3 {
   left: 15%;
 }
 
-.instagram {
-  height: 9%;
-  position: absolute;
-  top: 619%;
-  left: 49%;
-}
-
 .facebook {
   height: 9%;
   position: absolute;
-  top: 627%;
+  top: 618%;
   left: 42%;
 }
 
 .github {
   height: 9%;
   position: absolute;
-  top: 627%;
+  top: 618%;
   left: 49%;
 }
 
 .linkedin {
   height: 9%;
   position: absolute;
-  top: 627%;
+  top: 618%;
   left: 56%;
 }
 
 .details {
   position: absolute;
-  top: 625%;
+  top: 614%;
   left: 72%;
   text-align: center;
 }

@@ -14,15 +14,19 @@
     cursor: pointer;
 }
 
+.nav-menu {
+    margin-right: 110px !important;
+}
+
 .fa-react {
     margin-left: 0.5rem;
     font-size: 1.6rem;
 }
 
 .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-gap: 10px;
+    display: flex;
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-gap: 10px; */
     list-style: none;
     text-align: center;
     width: 70vw;
@@ -46,9 +50,19 @@
     color: #fff;
 }
 
-.nav-links-mobile {
-    display: none;
+.loginBtn {
+    color: white;
+    text-decoration: none;
 }
+
+.registerBtn {
+    color: white;
+    text-decoration: none;
+}
+
+/* .nav-links-mobile {
+    display: none;
+} */
 
 .menu-icon {
     display: none;
@@ -72,7 +86,7 @@
         height: 500px;
         position: absolute;
         top: 80px;
-        left: -100%;
+        left: -80%;
         opacity: 1;
         transition: all 0.5s ease;
     }

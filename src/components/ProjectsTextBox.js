@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FlipCard from './FlipCard';
 import img1 from '../images/hMhUPic.png';
 import img2 from '../images/NatPaPic.png';
-import img3 from '../images/pyramids.jfif';
+import img3 from '../images/ticTacToe.png';
 
 
 
@@ -14,22 +14,22 @@ const cards = [
         route: '../projects/hMhUfinal',
         front: '',
         image: img1,
-        back: 'Back'
+        back: 'Built with HTML5, CSS3, JavaScript'
     },
     {
-        id: '3',
+        id: '2',
         variant: 'hover',
         route: '../projects/Project2/homepage.html',
         front: '',
-        image: img2
-        // back: 'Back'
+        image: img2,
+        back: 'Built with HTML5, CSS3, jQuery, D3'
     },
     {
         id: '3',
         variant: 'hover',
         front: '',
-        image: img3
-        // back: 'Back'
+        image: img3,
+        back: 'Built with HTML5, CSS3, JavaScript'
     }
 ];
 

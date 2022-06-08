@@ -3,6 +3,8 @@ import { MenuItems } from './MenuItems';
 import { Button } from '../Button';
 import '../Navbar/Navbar.css'
 import img1 from '../../images/CroppedProfPicOfMe.jpg';
+import {Link} from 'react-router-dom';
+import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa';
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -30,8 +32,22 @@ class Navbar extends Component {
                     })}
                     
                 </ul>
-                <Button id='signUpBtn'>Sign Up</Button>
-                <Button id='signInBtn'>Sign In</Button>
+                <div className='listContainer'>
+                <ul className='regList'>
+                    <li className='login'>
+                        <Link to='/login' className='loginBtn'>
+                            <FaSignInAlt /> Login
+                        </Link>
+                    </li>
+                    <li className='register'>
+                        <Link to='/register' className='registerBtn'> Register
+                            <FaUser className='faUser'/>
+                        </Link>
+                    </li>
+                </ul>
+                </div>
+                {/* <Button id='signUpBtn'>Sign Up</Button>
+                <Button id='signInBtn'>Sign In</Button> */}
             </nav>
         )
     }

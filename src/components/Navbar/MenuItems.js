@@ -19,14 +19,14 @@ export const MenuItems = [
         url: '#foot',
         cName: 'nav-links'
     },
-    {
-        title: 'Sign Up',
-        url: '#',
-        cName: 'nav-links-mobile'
-    },
-    {
-        title: 'Sign In',
-        url: '#',
-        cName: 'nav-links-mobile'
-    }
+    // {
+    //     title: 'Sign Up',
+    //     url: '#',
+    //     cName: 'nav-links-mobile'
+    // },
+    // {
+    //     title: 'Sign In',
+    //     url: '#',
+    //     cName: 'nav-links-mobile'
+    // }
 ]

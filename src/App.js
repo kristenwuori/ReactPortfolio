@@ -1,28 +1,28 @@
 
 import './App.css';
-import ImageOne from './components/ImageOne';
-import ImageTwo from './components/ImageTwo';
-import ImageThree from './components/ImageThree';
-import AboutMe from './components/AboutMeTextBox';
-import Languages from './components/LanguagesTextBox';
-import Projects from './components/ProjectsTextBox';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
 
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <ImageOne />
-      <AboutMe />
-      <ImageTwo />
-      <Languages />
-      <ImageThree />
-      <Projects />
-      <Footer />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
