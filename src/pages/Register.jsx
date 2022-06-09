@@ -24,6 +24,7 @@ const Register = () => {
     }
 
     return <>
+    <div className='containerForRegister'>
         <section className='heading'>
             <h1>
                 <FaUser /> Register
@@ -84,6 +85,7 @@ const Register = () => {
                 </div>
             </form>
         </section>
+        </div>
     </>
 }
 

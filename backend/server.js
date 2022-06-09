@@ -4,7 +4,7 @@ const { errorHandler } = require('./middleware/errorMiddleware');
 const mongoose = require('mongoose');
 const connectDB = require('./config/db');
 // const bodyParser = require('body-parser');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 connectDB();
 

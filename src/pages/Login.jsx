@@ -22,6 +22,7 @@ const Login = () => {
     }
 
     return <>
+    <div className='containerForLogin'>
         <section className='heading'>
             <h1>
                 <FaSignInAlt /> Login
@@ -60,6 +61,7 @@ const Login = () => {
                 </div>
             </form>
         </section>
+        </div>
     </>
 }
 

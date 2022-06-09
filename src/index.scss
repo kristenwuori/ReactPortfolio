@@ -65,23 +65,9 @@ h3 {
   color: white !important;
 }
 
-// .faUser {
-//   position: absolute;
-//   left: 100px;
-//   top: 100px;
-// }
-
 .regList {
   list-style-type: none;
   color: white !important;
-}
-
-.listContainer {
-  // display: flex;
-  // justify-content: center;
-  // align-content: center;
-  // position: absolute;
-  // right: 10;
 }
 
 .text-box {
@@ -265,10 +251,9 @@ h3 {
 }
 
 .card-back {
-  // background-color: rgba(73, 63, 252, 1);
+  background-color: rgba(73, 63, 252, 1);
   width: 90%;
   transform: rotateY(180deg);
-  // position: absolute;
 }
 
 .flip-card-outer {
@@ -321,4 +306,12 @@ h3 {
       }
     }
   }
+}
+
+.containerForLogin {
+  text-align: center;
+}
+
+.containerForRegister {
+  text-align: center;
 }
