@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, rgb(110, 94, 254), rgba(73, 63, 252, 1) 100%);
+}
+
+.contentHeaders {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.socialLinks {
+    width: 50px !important;
+    height: auto !important;
+}
+
+.fbLogo {
+    margin-left: -100px !important;
+}
+
+.socialMedia {
+    padding: 30px;
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details {
+    text-align: center;
+}
+
+.locatedHeader {
+    margin-left: -40px;
+}
+
+.folMeHeader {
+    margin-left: 40px;
+}
+
+.contactMeHeader {
+    margin-left: 90px;
+}
+

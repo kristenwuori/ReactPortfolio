@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import React from 'react';
 
 
