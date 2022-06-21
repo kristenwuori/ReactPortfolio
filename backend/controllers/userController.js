@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 // @route POST /api/users
 // @access Public
 const registerUser = asyncHandler(async (req, res) => {
+    console.log(req);
     const { name, email, password } = req.body
 
     if(!name || !email || !password) {
@@ -41,6 +42,7 @@ const registerUser = asyncHandler(async (req, res) => {
             email: user.email,
             token: generateToken(user._id)
         })
+        
     } else {
         res.status(400)
         throw new Error('Invalid User Data')
@@ -84,7 +86,7 @@ const getMe = asyncHandler(async (req, res) => {
 
 //Generate JWT
 const generateToken = (id) => {
-    return jwt.sign({ id }, process.env.JWT_SECRET, { 
+    return jwt.sign({ id }, 'abc123', { 
         expiresIn: '30d'
     })
 }

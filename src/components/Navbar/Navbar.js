@@ -3,17 +3,26 @@ import { MenuItems } from './MenuItems';
 import { Button } from '../Button';
 import '../Navbar/Navbar.css'
 import img1 from '../../images/CroppedProfPicOfMe.jpg';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout, reset } from '../../features/auth/authSlice';
 
 class Navbar extends Component {
+    
     state = { clicked: false }
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
 
+
     render() {
+    // const navigate = useNavigate()
+    // const dispatch = useDispatch()
+    // const {user} = useSelector((state) => state.auth)
+
+
         return (
             <nav className='NavbarItems'>
                 <h1 className='navbar-logo'><img className='myLogo' src={img1} alt='logo'></img></h1>
