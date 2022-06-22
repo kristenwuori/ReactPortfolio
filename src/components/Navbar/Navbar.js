@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { MenuItems } from './MenuItems';
 import { Button } from '../Button';
 import '../Navbar/Navbar.css'
@@ -8,28 +8,35 @@ import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout, reset } from '../../features/auth/authSlice';
 
-class Navbar extends Component {
-    
-    state = { clicked: false }
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+const Navbar = () => {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const {user} = useSelector((state) => state.auth)
+
+    const onLogout = () => {
+        dispatch(logout())
+        dispatch(reset())
+        navigate('/')
     }
 
+    // state = { clicked: false }
+    const [clicked, setClicked] = useState(false);
 
-    render() {
-    // const navigate = useNavigate()
-    // const dispatch = useDispatch()
-    // const {user} = useSelector((state) => state.auth)
+
+    const handleClick = () => {
+        setClicked( !clicked )
+    }
+    
 
 
         return (
             <nav className='NavbarItems'>
                 <h1 className='navbar-logo'><img className='myLogo' src={img1} alt='logo'></img></h1>
-                <div className='menu-icon' onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
@@ -42,7 +49,14 @@ class Navbar extends Component {
                     
                 </ul>
                 <div className='listContainer'>
-                <ul className='regList'>
+                    {user ? (
+                        <li className='login'>
+                            <button className='btn' onClick={onLogout}>
+                            <FaSignOutAlt /> Logout
+                        </button>
+                    </li>
+                    ) : (<>
+                    <ul className='regList'>
                     <li className='login'>
                         <Link to='/login' className='loginBtn'>
                             <FaSignInAlt /> Login
@@ -54,12 +68,14 @@ class Navbar extends Component {
                         </Link>
                     </li>
                 </ul>
+                    </>)}
+                
                 </div>
                 {/* <Button id='signUpBtn'>Sign Up</Button>
                 <Button id='signInBtn'>Sign In</Button> */}
             </nav>
         )
     }
-}
+
 
 export default Navbar;
