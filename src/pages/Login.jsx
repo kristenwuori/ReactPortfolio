@@ -28,6 +28,8 @@ const Login = () => {
         if(isError) {
             toast.error(message)
         }
+        console.log(isSuccess)
+        console.log(user)
 
         if(isSuccess || user) {
             navigate('/')
